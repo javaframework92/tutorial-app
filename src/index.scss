@@ -1,0 +1,32 @@
+@import 'bootstrap/scss/bootstrap.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-container {
+    margin-bottom: 2rem;
+    
+    h2{
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+
+    p, ul{
+        margin-top: 1rem;
+        line-height: 1.75rem;
+        text-align: justify;
+         font-weight: 400;
+    }
+
+    .points {
+        margin-left: 2rem;
+        //list-style: georgian;
+    }
+}

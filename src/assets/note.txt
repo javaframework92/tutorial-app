@@ -1,0 +1,5 @@
+Navbar
+-------
+Mobile navbar issue - on outside click - FIXED
+Make Route dynamic by configuring in file
+Scroll arrow position issue in ipad mode

@@ -1,0 +1,149 @@
+.aj-main-header {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: #fff;
+            padding: 0.7rem;
+        }
+    }
+
+    .aj-nav-bar {
+       display: flex;
+        position: relative;
+       overflow: hidden;
+
+        .aj-nav-bar-item {
+            list-style: none;
+            padding: 1rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 300;
+
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                transition: background-color 0.3s ease-in;
+            }
+        }
+
+        .active {
+            color: #000;
+            background-color: #fff;
+        }
+
+    }
+
+    .aj-scroll-arrow {
+        position: absolute;
+        top: 3.52%;
+        transform: translateY(-50%);
+        background: #000;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.2em;
+        z-index: 10;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        svg {
+            vertical-align: sub;
+        }
+    }
+
+    .aj-scroll-arrow.left {
+        left: 11%;
+    }
+
+    .aj-scroll-arrow.right {
+        right: 0;
+    }
+
+    .aj-hamburger-navbar {
+        width: 30%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6.9%;
+        //margin-top: 3.4rem;
+        background-color: #000;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        
+
+        .aj-nav-bar-item {
+            list-style: none;
+            padding: 1rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 300;
+
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                transition: background-color 0.3s ease-in;
+            }
+        }
+
+        .active {
+            color: #000;
+            background-color: #fff;
+        }
+
+    }
+
+    .aj-hamburger-menu {
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        display: none;
+
+        .aj-hamburger {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .aj-nav-bar {
+            display: none;
+        }
+
+        .aj-scroll-arrow {
+           display: none;
+        }
+
+        .aj-hamburger-menu {
+            display: inline-block;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .aj-scroll-arrow {
+           display: none;
+        }
+
+        .aj-hamburger-navbar {
+            width: 100%;
+        }
+    }
+}
