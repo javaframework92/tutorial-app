@@ -1,9 +1,9 @@
+import Content from "../components/Content/Content";
+
 const CSS = () => {
 
     return (
-        <div>
-            CSS
-        </div>
+        <Content>Coming Soon</Content>
     );
 }
 

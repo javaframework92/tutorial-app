@@ -1,0 +1,41 @@
+.aj-content {
+    box-shadow: 0 0 5px #cfcfcfc4;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+
+    img {
+        width: 100%;
+        //box-shadow: 0 0 5px #cfcfcfc4;
+    }
+
+    pre {
+        box-shadow: 0 0 2px #7c4e4e70;
+        border-left: 4px solid #000;
+        border-radius: 5px;
+        padding-left: 1rem;
+    }
+}
+
+.aj-btn-group {
+    display: flex;
+    position: relative;
+    top: 2%;
+    margin-bottom: 5rem;
+
+    .aj-btn-previous {
+        margin-right: auto;
+    }
+
+    .aj-btn-next {
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .aj-content {
+        box-shadow: 0 0 0;
+    }
+
+}

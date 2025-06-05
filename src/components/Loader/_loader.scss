@@ -1,0 +1,23 @@
+.spinner-text-align {
+    flex-direction: column;
+}
+
+.spinner-size {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Overlay that covers the whole screen */
+.loading-overlay {
+  position: fixed; /* Fixed to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff8c; /* Semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* Above Bootstrap navbars, modals usually z-index 1040+ */
+  /* backdrop-filter: blur(5px); // Modern alternative for blur on overlay itself (less browser support) */
+}

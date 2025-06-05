@@ -1,9 +1,10 @@
+import Content from "../components/Content/Content";
+
 const JavaScript = () => {
 
     return (
-        <div>
-            JavaScript
-        </div>
+        <Content>Coming Soon</Content>
+
     );
 }
 

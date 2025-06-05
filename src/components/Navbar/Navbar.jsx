@@ -4,7 +4,7 @@ import { PiGreaterThanLight } from "react-icons/pi";
 import { PiLessThanLight } from "react-icons/pi";
 
 import { Link, useLocation } from "react-router-dom";
-import navbars from "../../assets/json/navbar.json";
+import tutorials from "../../assets/tutorials/tutorials.json";
 import "./_navbar.scss";
 
 
@@ -72,7 +72,15 @@ const Navbar = () => {
         <header className="aj-main-header">
 
             <div className="logo">
-                <a href="/">Jack Technie</a>
+                <div className="logo-underline"></div>
+                <a href="/">
+                    <div className="logo-group">
+                        <span className="logo-icon">WMD</span>
+                        <span className="logo-text">web media docs</span>
+
+                    </div>
+                </a>
+                <div className="logo-underline"></div>
             </div>
             {canScrollLeft && (
                 <div onClick={() => scrollByAmount(-50)} className="aj-scroll-arrow left">
@@ -80,18 +88,18 @@ const Navbar = () => {
                 </div>
             )}
             {
-                navbars.length > 0 && (
+                tutorials.length > 0 && (
                     <nav className={showHamberger ? "aj-hamburger-navbar" : "aj-nav-bar"} ref={menuRef}>
                         {
-                            navbars.map((navbar, index) => (
+                            tutorials.map((tutorial, index) => (
                                 <Link
                                     key={index}
-                                    to={navbar.path}
-                                    className={`aj-nav-bar-item ${location.pathname === navbar.path ? 'active' : ''}`}
+                                    to={tutorial.path}
+                                    className={`aj-nav-bar-item ${location.pathname === tutorial.path ? 'active' : ''}`}
                                     onClick={() => {
                                         setShowHamberger(false);
                                     }}
-                                >{navbar.displayName}</Link>
+                                >{tutorial.name}</Link>
                             ))
                         }
                     </nav>
@@ -104,6 +112,8 @@ const Navbar = () => {
             )}
             <div className="aj-hamburger-menu">
                 <RxHamburgerMenu className="aj-hamburger" onClick={() => {
+                    console.log("clicked");
+
                     setShowHamberger(!showHamberger);
                 }} />
             </div>

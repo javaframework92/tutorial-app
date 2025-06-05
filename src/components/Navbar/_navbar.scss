@@ -4,24 +4,49 @@
     display: flex;
     gap: 2rem;
     white-space: nowrap;
+    // position: sticky;
+    // top:0;
 
     .logo {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.2rem 0 0.2rem 0.7rem;
 
         a {
             font-size: 1.5rem;
             font-weight: 400;
             text-decoration: none;
             color: #fff;
-            padding: 0.7rem;
+
+        }
+
+        .logo-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-icon {
+            font-weight: 300;
+        }
+
+        .logo-text {
+            font-size: 0.5rem;
+        }
+
+        .logo-underline {
+            height: 2px;
+            background-color: #fff;
+            background: linear-gradient(to right, #efaeae, #2525258c);
         }
     }
 
+
+
     .aj-nav-bar {
-       display: flex;
+        display: flex;
         position: relative;
-       overflow: hidden;
+        overflow: hidden;
 
         .aj-nav-bar-item {
             list-style: none;
@@ -75,7 +100,7 @@
 
     .aj-hamburger-navbar {
         width: 30%;
-        height: 90%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -85,7 +110,7 @@
         overflow-y: auto;
         overflow-x: hidden;
 
-        
+
 
         .aj-nav-bar-item {
             list-style: none;
@@ -129,7 +154,7 @@
         }
 
         .aj-scroll-arrow {
-           display: none;
+            display: none;
         }
 
         .aj-hamburger-menu {
@@ -139,7 +164,7 @@
 
     @media screen and (max-width: 500px) {
         .aj-scroll-arrow {
-           display: none;
+            display: none;
         }
 
         .aj-hamburger-navbar {

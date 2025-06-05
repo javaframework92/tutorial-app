@@ -1,0 +1,16 @@
+{
+    "overview": {
+        "path": "/tutorials/html/overview.md",
+        "previousKey": "",
+        "nextKey": "what-is-html",
+        "currentTopic": "Overview",
+        "nextTopic": "What is HTML?"
+    },
+    "what-is-html": {
+        "path": "/tutorials/html/what-is-html.md",
+        "previousKey": "overview",
+        "nextKey": "overview",
+        "currentTopic": "What is HTML", 
+        "nextTopic": "HTML Overview"
+    }
+}

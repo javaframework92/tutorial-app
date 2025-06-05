@@ -1,0 +1,33 @@
+[
+    {
+        "name": "HTML",
+        "path": "/html",
+        "imagePath": "src/assets/images/html5.png",
+        "type": "frontend"
+    },
+    {
+        "name": "CSS",
+        "path": "/css",
+        "imagePath": "src/assets/images/css3.svg",
+        "type": "frontend"
+    },
+    {
+        "name": "JavaScript",
+        "path": "/javascript",
+        "imagePath": "src/assets/images/js.svg",
+        "type": "frontend"
+    },
+    {
+        "name": "Java",
+        "path": "/java",
+        "imagePath": "src/assets/images/java.svg",
+        "type": "backend"
+    },
+    {
+        "name": "Oracle",
+        "path": "/oracle",
+        "imagePath": "src/assets/images/oracle.svg",
+        "type": "database"
+    }
+
+]

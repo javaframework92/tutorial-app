@@ -1,57 +1,47 @@
-import overview from "../assets/tutorials/html/overview.json";
+import { useEffect, useState } from "react";
+import ReactMarkdown from 'react-markdown';
+import html from "../assets/tutorials/html.json";
 import Content from "../components/Content/Content";
 
 const HTML = () => {
 
-    return (
+    const [content, setContent] = useState('');
+    const [key, setKey] = useState('overview');
+    const [currentTopic, setCurrentTopic] = useState(null);
 
-        overview.length > 0 && (
-            <Content>
+    const updateKey = (key) => {
+        setKey(key);
+    }
 
-                {
-                    overview.map((o, i) => (
-                        <div key={i}>
-                            <h2>{o.heading}</h2>
-                            <p>{o.content}</p>
-                            <ul className="points">
-                                {
-                                    o.points && o.points.map((point, i1) => (
-                                        <li key={i1}>{point}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    ))
+    useEffect(() => {
+        const fetchHtml = async () => {
+            try {
+                let topic = html[key];
+                if (topic) {
+                    setCurrentTopic(topic);
+                    let response = await fetch(topic.path);
+                    let data = await response.text();
+                    setContent(data);
                 }
+            } catch (error) {
+                console.error("Error while fetching content due to error:" + error);
 
-            </Content>
-        )
+            }
+        };
 
-        /* overview.length > 0 && (
-            <main className="content-container">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8">
-                        {
-                            overview.map((o, i) => (
-                                <div key={i}>
-                                    <h2>{o.heading}</h2>
-                                    <p>{o.content}</p>
-                                    <ul className="points">
-                                        {
-                                            o.points && o.points.map((point, i1) => (
-                                                <li key={i1}>{point}</li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="col-2"></div>
-                </div>
-            </main>
-        ) */
+        fetchHtml();
+
+    }, [key]);
+
+
+    return (
+        <Content updateKey={ updateKey } currentTopic={currentTopic}>
+            <ReactMarkdown>{content}</ReactMarkdown>
+        </Content>
+
+        // <ContentGenerator
+        //     contents={overview}
+        // />
 
     );
 }

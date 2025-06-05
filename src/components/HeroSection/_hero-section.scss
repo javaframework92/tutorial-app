@@ -1,0 +1,73 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #e6fff5, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.greeting {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  transition: color 1s ease;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}

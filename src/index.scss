@@ -11,18 +11,23 @@ body {
 }
 
 .content-container {
-    margin-bottom: 2rem;
-    
-    h2{
+    margin: 2rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         margin-top: 1rem;
         font-weight: 400;
     }
 
-    p, ul{
+    p,
+    ul {
         margin-top: 1rem;
         line-height: 1.75rem;
         text-align: justify;
-         font-weight: 400;
+        font-weight: 400;
     }
 
     .points {
@@ -30,3 +35,13 @@ body {
         //list-style: georgian;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .content-container {
+        .points {
+            margin-left: 0.25rem;
+        }
+    }
+
+}
+

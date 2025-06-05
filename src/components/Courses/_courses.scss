@@ -1,0 +1,63 @@
+.card {
+    border: none;
+    box-shadow: 0 0 3px #d4d4d4;
+
+    &:hover {
+        box-shadow: 0 0 3px #9b9898;
+         background: linear-gradient(to bottom, #efefef, #f8e9cf)
+
+    }
+
+    .card-body {
+        text-align: center;
+
+        .card-img {
+            height: 7rem;
+            width: auto;
+
+            &:hover {
+                animation: spin 2s;
+            }
+        }
+    }
+}
+.aj-tech-type {
+    font-size: 1.5rem;
+}
+
+.aj-popular-courses {
+    background: linear-gradient(to right, #3f54d7, #63c2a2);
+    color: #fff;
+    border-radius: 5px;
+    display: inline;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    // color: transparent;
+    // background-clip: text;
+
+}
+
+.tech-row {
+    background: linear-gradient(to right, #3f54d7, #63c2a2);
+    color: transparent;
+    background-clip: text;
+    
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(30deg);
+
+    }
+    70%{
+        transform: rotate(-30deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

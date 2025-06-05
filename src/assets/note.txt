@@ -1,5 +1,18 @@
-Navbar
--------
+Navbar Open Issues
+--------------------
 Mobile navbar issue - on outside click - FIXED
 Make Route dynamic by configuring in file
-Scroll arrow position issue in ipad mode
+navbar Scroll arrow position issue in ipad mode
+nav bar click issue 
+
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+Web Development
+
+
+Programming Languages
+
+
+Databases
