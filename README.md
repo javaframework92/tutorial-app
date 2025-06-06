@@ -1,10 +1,8 @@
 # Production Build
-Execute below command for production build
-```npm run build```
+Execute command ```npm run build``` for production build.
 
 # Run app locally
-Execute below command to run tutorial app locally
-```npm run dev```
+Execute command ```npm run dev``` to run tutorial app locally
 
 Once application is running, open any browser and navigate to [http://localhost:5173](http://localhost:5173)
 
