@@ -1,18 +1,19 @@
-Navbar Open Issues
+Open Issues
 --------------------
 Mobile navbar issue - on outside click - FIXED
 Make Route dynamic by configuring in file
 navbar Scroll arrow position issue in ipad mode
 nav bar click issue 
+Issue in image shadow in content it impacts Home page images
+Introduce Left navigation
+Introduce Footer
+Make the color global at one place
+
+
+Navbar Open Issues
+--------------------
 
 --------------------------------------------------------------
 
 
 --------------------------------------------------------------
-Web Development
-
-
-Programming Languages
-
-
-Databases

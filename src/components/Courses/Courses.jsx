@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import tutorials from "../../assets/tutorials/tutorials.json";
-import "./_courses.scss";
 import TutorialsCard from "../TutorialsCard/TutorialsCard";
-import Loader from "../Loader/Loader";
+import "./_courses.scss";
 
 const Courses = ({ search }) => {
 
@@ -10,19 +9,25 @@ const Courses = ({ search }) => {
     const [frontends, setFrontends] = useState([]);
     const [backends, setBackends] = useState([]);
     const [databases, setDatabases] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    //  const [isLoading, setIsLoading] = useState(false);
+    const [courseNotFound, setCourseNotFOund] = useState(false);
 
     useEffect(() => {
-        setIsLoading(true);
+        //setIsLoading(true);
 
         let filteredTutorials = tutorials?.filter(tutorial => tutorial.name.toLowerCase().includes(search?.toLowerCase()));
 
-        filteredTutorials = filteredTutorials?.length !== 0 ? filteredTutorials : tutorials;
-        setFrontends(filteredTutorials?.filter(tutorial => tutorial.type === 'frontend'));
-        setBackends(filteredTutorials?.filter(tutorial => tutorial.type === 'backend'));
-        setDatabases(filteredTutorials?.filter(tutorial => tutorial.type === 'database'));
+        // filteredTutorials = filteredTutorials?.length !== 0 ? filteredTutorials : tutorials;
+        if (filteredTutorials?.length > 0) {
+            setCourseNotFOund(false);
+            setFrontends(filteredTutorials?.filter(tutorial => tutorial.type === 'frontend'));
+            setBackends(filteredTutorials?.filter(tutorial => tutorial.type === 'backend'));
+            setDatabases(filteredTutorials?.filter(tutorial => tutorial.type === 'database'));
+        } else {
+            setCourseNotFOund(true);
+        }
 
-        setIsLoading(false)
+        //setIsLoading(false)
 
 
     }, [search]);
@@ -31,11 +36,11 @@ const Courses = ({ search }) => {
 
     return (
         <>
-            {
+            {/* {
                 isLoading && (
                     <Loader></Loader>
                 )
-            }
+            } */}
             <div className="row">
                 <div className="col-12">
                     <div className="">
@@ -44,6 +49,18 @@ const Courses = ({ search }) => {
                 </div>
             </div>
             <div style={{ marginTop: '5rem' }}>
+                {
+                    courseNotFound && (
+                        <div className="row">
+                            <div className="col-12">
+                                <p className="not-found">
+                                    There is no search result found for <strong>{search}</strong>.
+                                    Either refresh your browser window or try to search other course.
+                                </p>
+                            </div>
+                        </div>
+                    )
+                }
                 {
                     frontends?.length > 0 && (
                         <>

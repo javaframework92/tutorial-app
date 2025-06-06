@@ -34,7 +34,7 @@ const Search = ({ onSearch, placeholder = "Search..." }) => {
                         onChange={handleChange}
                         aria-label="Search input" // For accessibility
                     />
-                    <button type="submit" className="btn btn-dark">
+                    <button type="submit" className="btn btn-primary">
                         Search
                     </button>
                 </form>

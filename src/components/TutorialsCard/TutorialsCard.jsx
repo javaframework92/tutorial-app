@@ -17,7 +17,7 @@ const TutorialsCard = ({ tutorials }) => {
                                         <a href={rowTutorial.path}>
                                             <div className="card">
                                                 <div className="card-body">
-                                                    <img src={rowTutorial.imagePath} className="card-img"></img>
+                                                    <img src={rowTutorial.imagePath} alt={rowTutorial.name} className="card-img"></img>
                                                 </div>
                                             </div>
                                         </a>

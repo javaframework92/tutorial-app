@@ -1,4 +1,4 @@
-## HTML Tutorial
+### HTML Introduction
 HTML stands for Hyper Text Markup Language. This is not a programming language, it's a markup language which is used to design web pages. In the context of HTML markup refers to the **tags** or **elements**.
 
 In the **HyperText Markup Language**, each word has it's own meaning:  
@@ -13,10 +13,10 @@ In the **HyperText Markup Language**, each word has it's own meaning:
 
 **Language:** HTML has a specific set of rules (syntax) that define how these tags should be used. Browsers are enough capable to understand this language and render the web page accordingly.
 
-#### Why Learn HTML?
+### Why Learn HTML?
 If you are learning web development, you must need to know about HTML. HTML is the standard language used to design web pages. Every website you visit is built on HTML.
 
-#### HTML Example
+### HTML Example
 
 ```html
 < !DOCTYPE html >
@@ -42,7 +42,7 @@ If you are learning web development, you must need to know about HTML. HTML is t
 - The ```<h1>``` element defines a large heading
 - The ```<p>``` element defines a paragraph
 
-#### How HTML Works?
+### How HTML Works?
 An HTML file is a text file that ends in .html. In these documents, we find tags and attributes that give the meaning and structure to what we see on a webpage. A web browser loads HTML markup and displays the page to the user according to its code.
 
 To understand HTML, think of its role as the backbone of a website that helps display each webpage's various components, such as text, pictures and links, correctly. If HTML didn't exist, web browsers would not be able to present web pages.
