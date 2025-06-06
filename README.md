@@ -1,3 +1,11 @@
+# Production Build
+Execute command ```npm run build``` for production build.
+
+# Run app locally
+Execute command ```npm run dev``` to run tutorial app locally
+
+Once application is running, open any browser and navigate to [http://localhost:5173](http://localhost:5173)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
