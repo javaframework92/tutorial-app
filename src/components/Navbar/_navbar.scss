@@ -9,37 +9,9 @@
     // top:0;
 
     .logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0.2rem 0 0.2rem 0.7rem;
-
-        a {
-            font-size: 1.5rem;
-            font-weight: 400;
-            text-decoration: none;
-            color: #fff;
-
-        }
-
-        .logo-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-icon {
-            font-weight: 300;
-        }
-
-        .logo-text {
-            font-size: 0.5rem;
-        }
-
-        .logo-underline {
-            height: 2px;
-            background-color: #fff;
-            background: linear-gradient(to right, #efaeae, #2525258c);
-        }
+      img{
+        height: 3.7rem;
+      }
     }
 
 
