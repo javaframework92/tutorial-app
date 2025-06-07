@@ -13,7 +13,7 @@ const TutorialsCard = ({ tutorials }) => {
                         <div className="row mt-4" key={`row-` + index}>
                             {
                                 rowTutorials?.map((rowTutorial, i) => (
-                                    <div key={i} className="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
+                                    <div key={i} className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
                                         <a href={rowTutorial.path}>
                                             <div className="card">
                                                 <div className="card-body">

@@ -21,6 +21,11 @@
     position: relative;
     top: 2%;
     margin-bottom: 5rem;
+    
+
+    .aj-next-topic {
+        color: var(--accent-color);
+    }
 
     .aj-btn-previous {
         margin-right: auto;
@@ -28,6 +33,15 @@
 
     .aj-btn-next {
         margin-left: auto;
+        background-color: var(--accent-color);
+        color: var(--text-color);
+
+        &:hover {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            background-color: var(--text-color);
+
+        }
     }
 
 }

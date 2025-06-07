@@ -1,24 +1,33 @@
 .hero {
   height: 40vh;
-  background: linear-gradient(to bottom, #e6fff5, #ffffff);
+  background: linear-gradient(to bottom, #f1e0fa, #ffffff);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  //align-items: center;
+  //text-align: center;
   padding: 20px;
+  // opacity: 0;
+  // transform: translateY(50px);
+  // transition: opacity 1s ease, transform 1s ease;
+}
+
+.aj-hero-content {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
-.hero.visible {
+.aj-hero-content.visible {
   opacity: 1;
   transform: translateY(0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .greeting {
-  font-size: 2rem;
+  font-size: 3rem;
   background: linear-gradient(to right, #a70e0e, #070789);
   margin-bottom: 20px;
   padding: 1rem;
@@ -33,10 +42,19 @@
   align-items: center;
   background: white;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
   width: 50vh;
+}
+
+@media screen and (max-width: 350px) {
+  .search-bar {
+    width: 35vh;
+  }
+  .greeting {
+    font-size: 2.5rem;
+  }
+
 }
 
 .search-bar input {
@@ -53,26 +71,26 @@
   cursor: pointer;
 }
 
-.button-group {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
+// .button-group {
+//   margin-top: 30px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 15px;
+//   justify-content: center;
+// }
 
-.button-group button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  background-color: #f0f0f0;
-  color: #333;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
-}
+// .button-group button {
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 25px;
+//   background-color: #f0f0f0;
+//   color: #333;
+//   font-weight: 600;
+//   cursor: pointer;
+//   transition: background 0.3s, transform 0.3s;
+// }
 
-.button-group button:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.05);
-}
+// .button-group button:hover {
+//   background-color: #e0e0e0;
+//   transform: scale(1.05);
+// }

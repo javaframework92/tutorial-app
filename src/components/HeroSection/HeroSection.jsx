@@ -1,8 +1,9 @@
+import { BiSearch } from 'react-icons/bi';
 import './_hero-section.scss';
 
 
 
-import  { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const HeroSection = (
   {
@@ -29,16 +30,28 @@ const HeroSection = (
       }
     };
   }, []);
-  
+
   const handleSearch = (event) => {
-      setSearchString(event.target.value)
+    setSearchString(event.target.value)
   }
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent page reload
+    if (onSearch) {
+      onSearch(searchString);
+    }
+  };
+
   return (
-    <div className={`hero ${isVisible ? 'visible' : ''}`} ref={heroRef}>
-      <h2 className="greeting">Welcome to Web Media Docs!</h2>
-      <div className="search-bar">
-        <input type="text" placeholder="Search tutorials" onChange={handleSearch}/>
-        <button onClick={onSearch(searchString)} >🔍</button>
+    <div className={`hero`} >
+      <div className={`aj-hero-content ${isVisible ? 'visible' : ''}`} ref={heroRef}>
+        <h2 className="greeting">Welcome to Web Media Docs!</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="search-bar">
+            <input type="text" placeholder="Search tutorials" onChange={handleSearch} />
+            <button type='submit' ><BiSearch></BiSearch></button>
+          </div>
+        </form>
       </div>
       {/* <div className="button-group">
         <button>Full Stack Live Classes</button>

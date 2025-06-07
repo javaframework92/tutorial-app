@@ -19,8 +19,8 @@ const Content = ({ children, updateKey, currentTopic }) => {
                             <div className="aj-btn-group">
                                 {/* {currentTopic.previousTopic}&nbsp;&nbsp;
                                 <button className="btn btn-dark aj-btn-previous" onClick={() => updateKey(currentTopic.previousKey)}>Previous</button> */}
-                                <button className="btn btn-dark aj-btn-next" onClick={() => updateKey(currentTopic?.nextKey)}>Next ❯</button>
-                                &nbsp;&nbsp;<span>{currentTopic?.nextTopic}</span>
+                                <button className="btn aj-btn-next" onClick={() => updateKey(currentTopic?.nextKey)}>Next ❯</button>
+                                &nbsp;&nbsp;<span className="aj-next-topic">{currentTopic?.nextTopic}</span>
                             </div>
                         )
                     }
