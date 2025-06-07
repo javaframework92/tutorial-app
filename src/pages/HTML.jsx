@@ -20,6 +20,7 @@ const HTML = () => {
                 let topic;
                 if(k){
                     topic = html[k];
+                    setKey(k)
                 } else {
                     topic = html[key];
                 }
@@ -41,7 +42,7 @@ const HTML = () => {
 
 
     return (
-        <Content currentTopic={currentTopic} courseIndexes={html}>
+        <Content currentTopic={currentTopic} courseIndexes={html} currentKey = {key}>
             <ReactMarkdown>{content}</ReactMarkdown>
         </Content>
 

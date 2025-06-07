@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./_sidebar.scss";
 
-const Sidebar = ({ title, courseIndexes }) => {
+const Sidebar = ({ title, currentKey, courseIndexes }) => {
     const location = useLocation();
     return (
         <div className="d-flex flex-column vh-100 p-3" style={{ width: '250px', backgroundColor: "#fff" }}>
@@ -10,7 +10,7 @@ const Sidebar = ({ title, courseIndexes }) => {
                 {
                     Object.keys(courseIndexes).map((key, index) => (
                         <li className="nav-item" key={index}>
-                            <a href={ `${location.pathname}?topic=${key}`} className={`nav-link ${location.pathname === courseIndexes[key].path ? 'aj-active' : ''} `}>{courseIndexes[key].currentTopic}</a>
+                            <a href={ `${location.pathname}?topic=${key}`} className={`nav-link ${currentKey === key ? 'aj-active' : ''} `}>{courseIndexes[key].currentTopic}</a>
                         </li>
                     )
 

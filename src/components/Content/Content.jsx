@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import "./_content.scss";
 
-const Content = ({ children, updateKey, currentTopic, courseIndexes }) => {
+const Content = ({ children, updateKey, currentKey, currentTopic, courseIndexes }) => {
 
     const location = useLocation();
 
@@ -12,7 +12,7 @@ const Content = ({ children, updateKey, currentTopic, courseIndexes }) => {
                 <div className="col-md-2 col-sm-1 col-xs-1">
                     {
                         location.pathname !== '/' && (
-                            <Sidebar title="HTML Tutorials" courseIndexes={courseIndexes}></Sidebar>
+                            <Sidebar title="HTML Tutorials" courseIndexes={courseIndexes} currentKey={currentKey}></Sidebar>
                         )
                     }
 
