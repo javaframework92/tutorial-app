@@ -108,8 +108,6 @@ const Navbar = () => {
             )}
             <div className="aj-hamburger-menu">
                 <RxHamburgerMenu className="aj-hamburger" onClick={() => {
-                    console.log("clicked");
-
                     setShowHamberger(!showHamberger);
                 }} />
             </div>
