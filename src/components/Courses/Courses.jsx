@@ -43,8 +43,8 @@ const Courses = ({ search }) => {
             } */}
             <div className="row">
                 <div className="col-12">
-                    <div className="">
-                        <h2 className="aj-popular-courses">Popular Courses</h2>
+                    <div className="aj-popular-text">
+                        <h2 className="aj-popular-courses">Most Popular Courses</h2>
                     </div>
                 </div>
             </div>

@@ -1,44 +1,17 @@
 .aj-main-header {
     width: 100%;
-    background-color: #000;
+    background-color: var(--accent-color);
     display: flex;
     gap: 2rem;
     white-space: nowrap;
+    height: 8vh;
     // position: sticky;
     // top:0;
 
     .logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0.2rem 0 0.2rem 0.7rem;
-
-        a {
-            font-size: 1.5rem;
-            font-weight: 400;
-            text-decoration: none;
-            color: #fff;
-
-        }
-
-        .logo-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-icon {
-            font-weight: 300;
-        }
-
-        .logo-text {
-            font-size: 0.5rem;
-        }
-
-        .logo-underline {
-            height: 2px;
-            background-color: #fff;
-            background: linear-gradient(to right, #efaeae, #2525258c);
-        }
+      img{
+        height: 3.7rem;
+      }
     }
 
 
@@ -47,24 +20,27 @@
         display: flex;
         position: relative;
         overflow: hidden;
+        align-items: center;
+        gap: .5rem;
 
         .aj-nav-bar-item {
             list-style: none;
-            padding: 1rem;
+            padding: .5rem 1rem;
             text-decoration: none;
-            color: #fff;
-            font-weight: 300;
+            color: var(--text-color);
+            border-radius: 0.5rem;
+            // font-weight: 300;
 
             &:hover {
-                color: #000;
-                background-color: #fff;
+                color: var(--accent-color);
+                background-color: var(--btn-bg-color);
                 transition: background-color 0.3s ease-in;
             }
         }
 
         .active {
-            color: #000;
-            background-color: #fff;
+            color: var(--accent-color);
+            background-color: var(--btn-bg-color);
         }
 
     }
@@ -104,31 +80,34 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 6.9%;
-        //margin-top: 3.4rem;
-        background-color: #000;
+        top: 8%;
+        background-color: var(--accent-color);
         overflow-y: auto;
         overflow-x: hidden;
-
-
+        z-index: 83;
+        align-items: center;
+        gap: .75rem;
+        justify-content: center;
 
         .aj-nav-bar-item {
             list-style: none;
-            padding: 1rem;
+            padding: 0.5rem 1rem;
             text-decoration: none;
-            color: #fff;
-            font-weight: 300;
+            color: var(--text-color);
+            // font-weight: 300;
+            border-radius: 0.5rem;
 
             &:hover {
-                color: #000;
-                background-color: #fff;
+                color: var(--accent-color);
+                background-color: var(--btn-bg-color);
                 transition: background-color 0.3s ease-in;
             }
         }
 
         .active {
-            color: #000;
-            background-color: #fff;
+            color: var(--accent-color);
+            background-color: var(--btn-bg-color);
+            ;
         }
 
     }

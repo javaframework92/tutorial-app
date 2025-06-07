@@ -72,15 +72,11 @@ const Navbar = () => {
         <header className="aj-main-header">
 
             <div className="logo">
-                <div className="logo-underline"></div>
+                
                 <a href="/">
-                    <div className="logo-group">
-                        <span className="logo-icon">WMD</span>
-                        <span className="logo-text">web media docs</span>
-
-                    </div>
+                        <img src = "src/assets/images/wmd.svg" alt="Web Media Docs"/>
                 </a>
-                <div className="logo-underline"></div>
+    
             </div>
             {canScrollLeft && (
                 <div onClick={() => scrollByAmount(-50)} className="aj-scroll-arrow left">

@@ -1,12 +1,18 @@
+import { BiSearch } from 'react-icons/bi';
 import './_hero-section.scss';
 
 
 
-import  { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-const HeroSection = () => {
+const HeroSection = (
+  {
+    onSearch
+  }
+) => {
   const [isVisible, setIsVisible] = useState(false);
   const heroRef = useRef(null);
+  const [searchString, setSearchString] = useState('');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,18 +31,33 @@ const HeroSection = () => {
     };
   }, []);
 
+  const handleSearch = (event) => {
+    setSearchString(event.target.value)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent page reload
+    if (onSearch) {
+      onSearch(searchString);
+    }
+  };
+
   return (
-    <div className={`hero ${isVisible ? 'visible' : ''}`} ref={heroRef}>
-      <h2 className="greeting">Hello, What Do You Want To Learn?</h2>
-      <div className="search-bar">
-        <input type="text" placeholder="Complete Interview Preparation" />
-        <button>🔍</button>
+    <div className={`hero`} >
+      <div className={`aj-hero-content ${isVisible ? 'visible' : ''}`} ref={heroRef}>
+        <h2 className="greeting">Welcome to Web Media Docs!</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="search-bar">
+            <input type="text" placeholder="Search tutorials" onChange={handleSearch} />
+            <button type='submit' ><BiSearch></BiSearch></button>
+          </div>
+        </form>
       </div>
-      <div className="button-group">
+      {/* <div className="button-group">
         <button>Full Stack Live Classes</button>
         <button>Data Science Advanced Course</button>
         <button>Master DSA & CP</button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -26,21 +26,27 @@
 }
 
 .aj-popular-courses {
-    background: linear-gradient(to right, #3f54d7, #63c2a2);
-    color: #fff;
+    background-color: var(--accent-color);
+    //color: #fff;
     border-radius: 5px;
     display: inline;
     position: absolute;
     padding: 0.5rem 1rem;
-    // color: transparent;
-    // background-clip: text;
+    color: transparent;
+    background-clip: text;
+    font-weight: 600 !important;
 
 }
 
+.aj-popular-text {
+    display: flex;
+    justify-content: center;
+}
+
 .tech-row {
-    background: linear-gradient(to right, #3f54d7, #63c2a2);
-    color: transparent;
-    background-clip: text;
+    //color: var(--accent-light-color) //linear-gradient(to right, #3f54d7, #63c2a2);
+    //color: transparent;
+    //background-clip: text;
     
 }
 

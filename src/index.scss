@@ -1,5 +1,13 @@
 @import 'bootstrap/scss/bootstrap.scss';
 
+
+:root {
+    --accent-color: #3a005ce3;
+    --accent-light-color: #7201b4;
+    --btn-bg-color: #fff;
+    --text-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@ body {
 
 .content-container {
     margin: 2rem;
-
+    animation: content-animation 1.5s ease;
     h1,
     h2,
     h3,
@@ -45,3 +53,14 @@ body {
 
 }
 
+@keyframes content-animation {
+    0% {
+        transform: translateY(100%);
+
+    }
+
+    100% {
+        transform: translateY(0%);
+        
+    }
+}
