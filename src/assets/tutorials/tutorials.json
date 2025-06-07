@@ -16,18 +16,6 @@
         "path": "/javascript",
         "imagePath": "src/assets/images/js.svg",
         "type": "frontend"
-    },
-    {
-        "name": "Java",
-        "path": "/java",
-        "imagePath": "src/assets/images/java.svg",
-        "type": "backend"
-    },
-    {
-        "name": "Oracle",
-        "path": "/oracle",
-        "imagePath": "src/assets/images/oracle.svg",
-        "type": "database"
     }
 
 ]

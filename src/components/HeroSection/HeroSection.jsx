@@ -48,8 +48,8 @@ const HeroSection = (
         <h2 className="greeting">Welcome to Web Media Docs!</h2>
         <form onSubmit={handleSubmit}>
           <div className="search-bar">
-            <input type="text" placeholder="Search tutorials" onChange={handleSearch} />
-            <button type='submit' ><BiSearch></BiSearch></button>
+            <input type="text" placeholder="Search tutorials.." onChange={handleSearch} />
+            <button type='submit'><BiSearch className='aj-search-icon'></BiSearch></button>
           </div>
         </form>
       </div>

@@ -10,7 +10,7 @@
 
     pre {
         box-shadow: 0 0 2px #7c4e4e70;
-        border-left: 4px solid #000;
+        border-left: 4px solid var(--accent-color);
         border-radius: 5px;
         padding-left: 1rem;
     }

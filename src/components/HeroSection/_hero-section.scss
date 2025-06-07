@@ -12,6 +12,10 @@
   // transition: opacity 1s ease, transform 1s ease;
 }
 
+.aj-search-icon{
+  fill: var(--accent-color);
+}
+
 .aj-hero-content {
   opacity: 0;
   transform: translateY(50px);

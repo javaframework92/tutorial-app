@@ -18,6 +18,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::placeholder {
+    color: var(--accent-light-color);
+}
+
 .content-container {
     margin: 2rem;
     animation: content-animation 1.5s ease;
