@@ -23,8 +23,9 @@ body {
 }
 
 .content-container {
-    margin: 2rem;
-    animation: content-animation 1.5s ease;
+    min-height: 100vh;
+    margin: 2rem 0;
+    // animation: content-animation 1.5s ease;
     h1,
     h2,
     h3,

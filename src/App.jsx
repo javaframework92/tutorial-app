@@ -5,6 +5,7 @@ import HTML from './pages/HTML';
 import CSS from './pages/CSS';
 import JavaScript from './pages/JavaScript';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/css" element={<CSS />}></Route>
           <Route path="/javascript" element={<JavaScript />}></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

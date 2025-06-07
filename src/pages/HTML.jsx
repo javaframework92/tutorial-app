@@ -2,21 +2,27 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from 'react-markdown';
 import html from "../assets/tutorials/html.json";
 import Content from "../components/Content/Content";
+import { useSearchParams } from "react-router-dom";
 
 const HTML = () => {
 
     const [content, setContent] = useState('');
     const [key, setKey] = useState('overview');
     const [currentTopic, setCurrentTopic] = useState(null);
-
-    const updateKey = (key) => {
-        setKey(key);
-    }
+    const [searchParams] = useSearchParams();
 
     useEffect(() => {
+        
         const fetchHtml = async () => {
             try {
-                let topic = html[key];
+                let k = searchParams.get("topic");
+                
+                let topic;
+                if(k){
+                    topic = html[k];
+                } else {
+                    topic = html[key];
+                }
                 if (topic) {
                     setCurrentTopic(topic);
                     let response = await fetch(topic.path);
@@ -35,7 +41,7 @@ const HTML = () => {
 
 
     return (
-        <Content updateKey={ updateKey } currentTopic={currentTopic}>
+        <Content currentTopic={currentTopic} courseIndexes={html}>
             <ReactMarkdown>{content}</ReactMarkdown>
         </Content>
 
