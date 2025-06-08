@@ -4,6 +4,7 @@ import './_hero-section.scss';
 
 
 import { useEffect, useRef, useState } from 'react';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 const HeroSection = (
   {
@@ -45,7 +46,8 @@ const HeroSection = (
   return (
     <div className={`hero`} >
       <div className={`aj-hero-content ${isVisible ? 'visible' : ''}`} ref={heroRef}>
-        <h2 className="greeting">Welcome to Web Media Docs!</h2>
+        <h2 className="greeting"><AnimatedText text="Welcome to Web Media Docs!" delay={50} />
+        </h2>
         <form onSubmit={handleSubmit}>
           <div className="search-bar">
             <input type="text" placeholder="Search tutorials.." onChange={handleSearch} />

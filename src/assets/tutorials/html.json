@@ -1,16 +1,23 @@
 {
-    "overview": {
-        "path": "/tutorials/html/overview.md",
+    "introduction": {
+        "path": "/tutorials/html/introduction.md",
         "previousKey": "",
-        "nextKey": "what-is-html",
-        "currentTopic": "Overview",
-        "nextTopic": "What is HTML?"
+        "nextKey": "basic-html-tags",
+        "currentTopic": "Introduction to HTML",
+        "nextTopic": "Basic HTML Tags"
     },
-    "what-is-html": {
-        "path": "/tutorials/html/what-is-html.md",
-        "previousKey": "overview",
-        "nextKey": "overview",
-        "currentTopic": "What is HTML", 
-        "nextTopic": "HTML Overview"
+    "basic-html-tags": {
+        "path": "/tutorials/html/basic-html-tags.md",
+        "previousKey": "introduction",
+        "nextKey": "links-and-anchors",
+        "currentTopic": "Basic HTML Tags", 
+        "nextTopic": "Links and Anchors"
+    },
+    "links-and-anchors": {
+        "path": "/tutorials/html/links-and-anchors.md",
+        "previousKey": "basic-html-tags",
+        "nextKey": "introduction",
+        "currentTopic": "Links and Anchors", 
+        "nextTopic": "Introduction to HTML"
     }
 }

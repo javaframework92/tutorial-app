@@ -7,7 +7,7 @@ import { useSearchParams } from "react-router-dom";
 const HTML = () => {
 
     const [content, setContent] = useState('');
-    const [key, setKey] = useState('overview');
+    const [key, setKey] = useState('introduction');
     const [currentTopic, setCurrentTopic] = useState(null);
     const [searchParams] = useSearchParams();
 
@@ -45,11 +45,6 @@ const HTML = () => {
         <Content currentTopic={currentTopic} courseIndexes={html} currentKey = {key}>
             <ReactMarkdown>{content}</ReactMarkdown>
         </Content>
-
-        // <ContentGenerator
-        //     contents={overview}
-        // />
-
     );
 }
 
