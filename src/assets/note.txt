@@ -10,9 +10,83 @@ Introduce Footer
 Make the color global at one place
 
 
-Navbar Open Issues
+HTML Indexes
 --------------------
+1. Introduction to HTML
+    What is HTML?
+    History & purpose
+    Structure of an HTML Document
+    Basic anatomy of an HTML page (<!DOCTYPE html>, <html>, <head>, <body>)
 
+2. Basic HTML Tags
+    Headings (<h1> to <h6>)
+    Paragraph (<p>)
+    Line Break (<br>) and Horizontal Rule (<hr>)
+    Comments in HTML (<!-- comment -->)
+
+3. Links and Anchors
+    <a href="url">Link</a>
+    Target attribute (_blank, _self, etc.)
+    Linking within a page (internal anchors)
+
+4. Images
+    <img src="url" alt="description">
+    Width and height
+    Responsive image tips
+
+5. Lists
+    Ordered List (<ol>)
+    Unordered List (<ul>)
+    List Item (<li>)
+    Nested Lists
+
+6. Tables
+    <table>, <tr>, <td>, <th>, <thead>, <tbody>, <tfoot>
+    Table borders, colspan, rowspan
+
+7. Forms
+    <form>, <input>, <label>, <textarea>, <select>, <option>, <button>
+    Input types (text, email, password, checkbox, radio, file, etc.)
+    Placeholder, required, disabled, readonly
+
+8. Semantic HTML
+    <header>, <footer>, <nav>, <main>, <section>, <article>, <aside>, <figure>, <figcaption>
+    Why semantic tags are important (accessibility + SEO)
+
+9. Text Formatting Tags
+    <b>, <strong>, <i>, <em>, <mark>, <code>, <pre>, <blockquote>, <abbr>
+
+10. HTML Attributes
+    Global attributes: id, class, style, title, data-*
+    Custom data attributes (data-info, etc.)
+
+11. Meta Tags and the <head> section
+    <title>, <meta charset>, <meta name="description">, viewport tag
+
+12. Inline CSS & HTML Styling
+    style attribute
+    Best practices: avoid inline styles; prefer CSS files
+
+13. Embedding Content
+    <iframe>, <embed>, <object>, <video>, <audio>
+    Embedding YouTube, Google Maps, PDFs
+
+14. HTML5 New Features
+    <canvas>, <video>, <audio>, <progress>, <meter>
+    HTML5 form enhancements (date pickers, validations)
+
+15. HTML Entities
+    &lt;, &gt;, &nbsp;, &copy;, etc.
+
+16. Embedding Content
+    <iframe> (e.g., YouTube videos)
+    Embedding Google Maps
+    <object>, <embed>
+
+17. Best Practices
+    Valid HTML
+    Accessible content (use of alt, semantic tags)
+    Proper nesting & indentation
 --------------------------------------------------------------
 
 
