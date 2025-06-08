@@ -4,8 +4,8 @@ import "./_sidebar.scss";
 const Sidebar = ({ title, currentKey, courseIndexes }) => {
     const location = useLocation();
     return (
-        <div className="d-flex flex-column vh-100 p-3" style={{ width: '250px', backgroundColor: "#fff" }}>
-            <h4 className="aj-index-title">{title}</h4>
+        <div className="aj-sidebar vh-100 p-3">
+            <h4 className="aj-sidebar-title">{title}</h4>
             <ul className="nav nav-pills flex-column">
                 {
                     Object.keys(courseIndexes).map((key, index) => (
