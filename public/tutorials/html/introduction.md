@@ -15,12 +15,12 @@ In the **HyperText Markup Language**, each word has it's own meaning:
 
 ---
 
-## Why Learn HTML?
+### Why Learn HTML?
 If you are learning web development, you must need to know about HTML. HTML is the standard language used to design web pages. Every website you visit is built on HTML.
 
 ---
 
-## Structure of an HTML Document
+### Structure of an HTML Document
 
 
 ```html
@@ -40,7 +40,7 @@ If you are learning web development, you must need to know about HTML. HTML is t
 
 --- 
 
-## Basic anatomy of an HTML page
+### Basic anatomy of an HTML page
 - The ```<!DOCTYPE html>``` declaration defines that this document is an HTML5 document
 - The ```<html>``` element is the root element of an HTML page
 - The ```<head>``` element contains meta information about the HTML page
@@ -51,7 +51,7 @@ If you are learning web development, you must need to know about HTML. HTML is t
 
 --- 
 
-## How HTML Works?
+### How HTML Works?
 1. You write HTML code
 2. Browser reads your HTML - The browser reads your HTML from top to bottom.
 It doesn't "run" the code like JavaScript - it just interprets and renders it as structured content.
@@ -69,7 +69,7 @@ The DOM is what JavaScript can interact with
 
 --- 
 
-## History of HTML
+### History of HTML
 - ##### 1991 – HTML 1.0
    - Created by Tim Berners-Lee, the inventor of the World Wide Web.
    - Basic tags like `<p>`, `<h1>`, `<a>`, and `<img>`.
