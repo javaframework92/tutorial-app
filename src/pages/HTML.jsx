@@ -26,7 +26,7 @@ const HTML = () => {
                 }
                 if (topic) {
                     setCurrentTopic(topic);
-                    let response = await fetch(topic.path);
+                    let response = await fetch(topic?.path);
                     let data = await response.text();
                     setContent(data);
                 }

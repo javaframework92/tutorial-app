@@ -26,14 +26,27 @@ const Content = ({ children, updateKey, currentKey, currentTopic, courseIndexes 
                     {
                         location.pathname !== '/' && (
                             <div className="aj-btn-group">
-                                {/* {currentTopic.previousTopic}&nbsp;&nbsp;
-                                <button className="btn btn-dark aj-btn-previous" onClick={() => updateKey(currentTopic.previousKey)}>Previous</button> */}
-                                {/* <button className="btn aj-btn-next" onClick={() => navigateTopic(currentTopic?.nextKey)}>Next ❯</button> */}
+                                {
+                                    currentTopic?.previousTopic && (
+                                        <>
+                                            <span className="aj-topic-text">{currentTopic?.previousTopic}</span>&nbsp;&nbsp;
+                                            <a className="btn aj-btn-previous" href={`${location.pathname}?topic=${currentTopic?.previousKey}`}>❮ Previous</a>
+                                        </>
+                                    )
+                                }
+                                {
+                                    currentTopic?.nextTopic && (
+                                        <>
+                                            <a href={`${location.pathname}?topic=${currentTopic?.nextKey}`} className="btn aj-btn-next">Next ❯</a>
+                                            &nbsp;&nbsp;<span className="aj-topic-text">{currentTopic?.nextTopic}</span>
+                                        </>
+                                    )
+                                }
 
-                                <a href={`${location.pathname}?topic=${currentTopic?.nextKey}`} className="btn aj-btn-next">Next ❯</a>
 
 
-                                &nbsp;&nbsp;<span className="aj-next-topic">{currentTopic?.nextTopic}</span>
+
+
                             </div>
                         )
                     }

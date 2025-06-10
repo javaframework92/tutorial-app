@@ -24,12 +24,21 @@
     margin-bottom: 6rem;
     
 
-    .aj-next-topic {
+    .aj-topic-text {
         color: var(--accent-color);
     }
 
     .aj-btn-previous {
         margin-right: auto;
+        background-color: var(--accent-color);
+        color: var(--text-color);
+
+         &:hover {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            background-color: var(--text-color);
+
+        }
     }
 
     .aj-btn-next {

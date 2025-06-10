@@ -4,20 +4,23 @@
         "previousKey": "",
         "nextKey": "basic-html-tags",
         "currentTopic": "Introduction to HTML",
-        "nextTopic": "Basic HTML Tags"
+        "nextTopic": "Basic HTML Tags",
+        "previousTopic": ""
     },
     "basic-html-tags": {
         "path": "/tutorials/html/basic-html-tags.md",
         "previousKey": "introduction",
         "nextKey": "links-and-anchors",
         "currentTopic": "Basic HTML Tags", 
-        "nextTopic": "Links and Anchors"
+        "nextTopic": "Links and Anchors",
+        "previousTopic": "Introduction to HTML"
     },
     "links-and-anchors": {
         "path": "/tutorials/html/links-and-anchors.md",
         "previousKey": "basic-html-tags",
         "nextKey": "introduction",
         "currentTopic": "Links and Anchors", 
-        "nextTopic": "Introduction to HTML"
+        "nextTopic": "",
+        "previousTopic": "Basic HTML Tags"
     }
 }
