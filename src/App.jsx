@@ -6,6 +6,7 @@ import CSS from './pages/CSS';
 import JavaScript from './pages/JavaScript';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Editor from './components/Editor/Editor';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/html" element={<HTML />}></Route>
           <Route path="/css" element={<CSS />}></Route>
           <Route path="/javascript" element={<JavaScript />}></Route>
+          <Route path="/editor" element={<Editor />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

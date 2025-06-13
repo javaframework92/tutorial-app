@@ -88,6 +88,7 @@
         align-items: center;
         gap: .75rem;
         justify-content: center;
+        animation: hm-navbar-animation 0.75s ease-out;
 
         .aj-nav-bar-item {
             list-style: none;
@@ -149,5 +150,15 @@
         .aj-hamburger-navbar {
             width: 100%;
         }
+    }
+}
+
+@keyframes hm-navbar-animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
     }
 }

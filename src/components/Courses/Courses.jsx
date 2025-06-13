@@ -43,6 +43,13 @@ const Courses = ({ search }) => {
             } */}
             <div className="row">
                 <div className="col-12">
+                    <div className="aj-editor-group">
+                        <button className="aj-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-12">
                     <div className="aj-popular-text">
                         <h2 className="aj-popular-courses">Most Popular Courses</h2>
                     </div>
