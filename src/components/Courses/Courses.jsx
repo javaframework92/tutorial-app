@@ -32,6 +32,10 @@ const Courses = ({ search }) => {
 
     }, [search]);
 
+    const openEditor = () => {
+        window.open("/editor", "_blank")
+    }
+
 
 
     return (
