@@ -1,110 +1,130 @@
-## Basic HTML Tags
-Welcome! Now that you've got a feel for what HTML is, it's time to learn the actual building blocks: **HTML tags**. These tags tell the browser how to structure and display your content.
+## 2. Basic HTML Tags
 
-Let’s explore the most commonly used tags, grouped by category.
+Now that you understand what HTML is, let’s go over its building blocks — the tags.
+
+HTML tags define how content should appear and behave in the browser. Most tags come in pairs: an opening tag and a closing tag.
+
+Example:
+
+```html
+<p>This is a paragraph.</p>
+```
+
+Below are the most commonly used HTML tags, grouped by purpose.
 
 ---
 
-### 1. Text & Headings
+### Headings (`<h1>` to `<h6>`)
 
-These tags help you format the text on your page.
+Used to define headings and subheadings on a page.
 
-- `<h1>` to `<h6>` - Used for headings. `<h1>` is the biggest (main heading), and `<h6>` is the smallest.
-- `<p>` - Defines a paragraph. Great for blocks of text.
-- `<br>` - Adds a line break (like pressing Enter).
-- `<hr>` - Creates a horizontal line, useful for separating content.
-
-**Example:**
+- `<h1>` is the most important (largest)
+- `<h6>` is the least important (smallest)
 
 ```html
-<h1>Welcome to My Site</h1>
+<h1>Main Title</h1>
+<h2>Subsection</h2>
+```
+
+---
+
+### Paragraphs (`<p>`)
+
+Defines a block of text as a paragraph.
+
+```html
 <p>This is a paragraph of text.</p>
+```
+
+---
+
+### Line Break (`<br>`)
+
+Forces a line break without starting a new paragraph.
+
+```html
+<p>First line<br>Second line</p>
+```
+
+---
+
+### Horizontal Rule (`<hr>`)
+
+Creates a horizontal divider between sections.
+
+```html
 <hr>
 ```
 
 ---
 
-### 2. Text Formatting
+### Text Formatting Tags
 
-Want to make text bold, italic, or underlined? These tags are your tools.
+Used to change how text appears:
 
-- `<strong>` - Bold text, and also tells search engines it's important.
-- `<em>` - Italic text with emphasis.
-- `<u>` - Underlined text.
-- `<mark>` - Highlights text.
-- `<code>` - Shows code in a monospace font.
-- `<pre>` - Preserves formatting and spaces.
-
-**Example:**
+- `<strong>` — Bold and important
+- `<em>` — Emphasized (italic)
+- `<u>` — Underlined
+- `<mark>` — Highlighted
+- `<code>` — Inline code
+- `<pre>` — Preformatted block (preserves spacing)
 
 ```html
-<p><strong>Important:</strong> Save your work often!</p>
-<p><em>This is emphasized text.</em></p>
+<p><strong>Bold</strong> and <em>italic</em> text</p>
+<p><u>Underlined</u> and <mark>highlighted</mark></p>
+<p><code>console.log("Hello")</code></p>
 ```
 
 ---
 
-### 3. Links and Navigation
+### Lists (`<ul>`, `<ol>`, `<li>`)
 
-Links are the heart of the web. Here's how to create them.
+Used to create bullet and numbered lists.
 
-- `<a href="URL">` - Creates a clickable link.
-  - Attributes: `target="_blank"`, `title=""`, `rel=""`
-
-**Example:**
-
-```html
-<a href="https://example.com" target="_blank">Visit Example</a>
-```
-
----
-
-### 4. Images and Media
-
-Want to add images, videos, or audio? Use these tags.
-
-- `<img src="..." alt="...">` - Adds an image. Use alt attribute to add alternate texts which is shown when image does not loads.
-- `<video>` and `<audio>` - Add media players.
-- `<source>` - Used inside `<video>` or `<audio>` for multiple file options.
-
-**Example:**
-
-```html
-<img src="logo.png" alt="Website Logo" width="200">
-```
-
----
-
-### 5. Lists
-
-Great for menus, to-do lists, or item collections.
-
-- `<ul>` - Unordered list (bullets).
-- `<ol>` - Ordered list (numbers).
-- `<li>` - List item.
-
-**Example:**
+- `<ul>` — Unordered list
+- `<ol>` — Ordered list
+- `<li>` — List item
 
 ```html
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
+  <li>Milk</li>
+  <li>Bread</li>
 </ul>
+
+<ol>
+  <li>First step</li>
+  <li>Second step</li>
+</ol>
 ```
 
 ---
 
-### 6. Tables
+### Links (`<a>`)
 
-For displaying data in rows and columns.
+Defines a hyperlink.
 
-- `<table>` - Creates a table.
-- `<tr>` - Table row.
-- `<th>` - Table header.
-- `<td>` - Table cell.
+```html
+<a href="https://example.com">Visit Site</a>
+```
 
-**Example:**
+---
+
+### Images (`<img>`)
+
+Displays an image on the page.
+
+- `src` — Image URL or file path
+- `alt` — Alternate text (for accessibility)
+
+```html
+<img src="logo.png" alt="Company Logo">
+```
+
+---
+
+### Tables (`<table>`, `<tr>`, `<th>`, `<td>`)
+
+Used to display data in rows and columns.
 
 ```html
 <table>
@@ -113,95 +133,143 @@ For displaying data in rows and columns.
     <th>Age</th>
   </tr>
   <tr>
-    <td>Amit</td>
-    <td>21</td>
+    <td>Alice</td>
+    <td>25</td>
   </tr>
 </table>
 ```
 
 ---
 
-### 7. Forms and Inputs
+### Forms (`<form>`, `<input>`, `<textarea>`, `<button>`)
 
-To collect data from users (like login, contact forms, etc.).
-
-- `<form>` - Wraps all form inputs.
-- `<input>` - Text field, checkbox, radio button, etc.
-- `<textarea>` - Multi-line input.
-- `<button>` - Clickable button.
-- `<select>` & `<option>` - Dropdown list.
-
-**Example:**
+Used to collect user input.
 
 ```html
 <form>
   <label>Name:</label>
-  <input type="text" name="username">
-  <button type="submit">Submit</button>
+  <input type="text" name="name"><br>
+  
+  <label>Message:</label>
+  <textarea name="message"></textarea><br>
+  
+  <button type="submit">Send</button>
 </form>
 ```
 
 ---
 
-### 8. Layout and Structure
+### Semantic Layout Tags
 
-Used to organize your content into sections.
+These tags help organize the page and give structure to the layout.
 
-- `<div>` - Generic block-level container.
-- `<span>` - Generic inline container.
-- `<header>`, `<footer>` - Top and bottom of a page.
-- `<section>`, `<article>`, `<aside>`, `<nav>` - Semantic containers for better structure.
-- `<main>` - The central content of the page.
-
-**Example:**
+- `<header>` — Top section
+- `<footer>` — Bottom section
+- `<main>` — Main content area
+- `<section>` — Logical page sections
+- `<article>` — Standalone content
+- `<nav>` — Navigation links
+- `<aside>` — Sidebar content
 
 ```html
+<header><h1>Site Name</h1></header>
 <main>
   <section>
-    <h2>About Me</h2>
-    <p>This is the main content area.</p>
+    <h2>About</h2>
+    <p>This is the about section.</p>
   </section>
 </main>
+<footer>&copy; 2025</footer>
 ```
 
 ---
 
-### 9. Page Setup and Metadata
+## Full Example: Basic HTML Page
 
-These tags go inside the `<head>` of your HTML document.
-
-- `<!DOCTYPE html>` - Declares HTML5 version.
-- `<html>` - Root of your document.
-- `<head>` - Meta info like title, character set, etc.
-- `<title>` - Title shown on browser tab.
-- `<meta>` - Info like description, author, etc.
-- `<link>` - Connects external CSS files.
-- `<style>` - Internal CSS.
-- `<script>` - JavaScript code.
-
-**Example:**
+Here is a complete HTML example using many of the tags from above. This can be previewed in a browser or shown as a screenshot on your tutorial site.
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Web Page</title>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
 </head>
 <body>
-  <p>Hello world!</p>
+
+  <header>
+    <h1>Welcome to HTML Basics</h1>
+    <p>Learn how web pages are built step by step.</p>
+    <hr>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Text Formatting</h2>
+      <p>This is a <strong>bold</strong>, <em>italic</em>, and <u>underlined</u> sentence.</p>
+      <p>Also includes <mark>highlighted</mark> and <code>inline code</code>.</p>
+    </section>
+
+    <section>
+      <h2>List Example</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Image and Link</h2>
+      <p>Visit the <a href="https://example.com" target="_blank" rel="noopener noreferrer">official website</a>.</p>
+      <img src="logo.png" alt="Logo" width="150">
+    </section>
+
+    <section>
+      <h2>Table Example</h2>
+      <table border="1">
+        <tr>
+          <th>Technology</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Structure</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Styling</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Tutorial</p>
+  </footer>
+
 </body>
 </html>
 ```
-
+![Basic HTML Tags Example](src/assets/images/html/basic_html_tag_1.png)
 ---
 
-### 10. Extra Useful Tags
-Some extra goodies for interactive or visual content.
+## Summary
 
-- `<iframe>` - Embed another page (like YouTube).
-- `<noscript>` - Content shown if JavaScript is disabled.
-- `<canvas>` - Used for drawing.
-- `<svg>` - Scalable vector graphics.
-- `<details>` and `<summary>` - Expandable/collapsible content.
-- `<progress>` - Shows task progress.
-- `<meter>` - Displays a measurement.
+This section introduced the core HTML tags used for text, layout, links, lists, forms, and more. These are the foundational elements you’ll reuse across every project.
+

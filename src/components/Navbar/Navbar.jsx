@@ -54,6 +54,11 @@ const Navbar = () => {
         }
     };
 
+      const openEditor = () => {
+        window.open("/editor", "_blank")
+    }
+
+
     useEffect(() => {
 
         const handleOutsideClick = () => {
@@ -110,6 +115,10 @@ const Navbar = () => {
                 <RxHamburgerMenu className="aj-hamburger" onClick={() => {
                     setShowHamberger(!showHamberger);
                 }} />
+            </div>
+
+            <div className="aj-editor-group">
+                <button className="aj-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
             </div>
         </header>
 

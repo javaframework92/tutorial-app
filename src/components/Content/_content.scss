@@ -19,9 +19,11 @@
 
 .aj-btn-group {
     display: flex;
-    position: relative;
-    top: 2%;
-    margin-bottom: 6rem;
+    // position: relative;
+    // top: 1%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    gap: .25rem;
     
 
     .aj-topic-text {
