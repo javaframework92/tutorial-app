@@ -32,10 +32,7 @@ const Courses = ({ search }) => {
 
     }, [search]);
 
-    const openEditor = () => {
-        window.open("/editor", "_blank")
-    }
-
+  
 
 
     return (
@@ -45,13 +42,6 @@ const Courses = ({ search }) => {
                     <Loader></Loader>
                 )
             } */}
-            <div className="row">
-                <div className="col-12">
-                    <div className="aj-editor-group">
-                        <button className="aj-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
-                    </div>
-                </div>
-            </div>
             <div className="row">
                 <div className="col-12">
                     <div className="aj-popular-text">

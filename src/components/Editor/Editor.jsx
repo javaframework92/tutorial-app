@@ -51,21 +51,21 @@ const Editor = () => {
                 <div className="row">
                     <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12">
                         <div className="aj-editor">
-                            <label for="html">HTML</label>
+                            <label for="html"> <span style={{color:"orange"}}>&lt;&gt;</span> HTML</label>
                             <textarea onKeyUp={handleKeyUp} id="html"></textarea>
                         </div>
                         <div className="aj-editor">
-                            <label for="css">CSS</label>
+                            <label for="css"> <span style={{color:"#27bbff"}}>#</span> CSS</label>
                             <textarea onKeyUp={handleKeyUp} id="css"></textarea>
                         </div>
                         <div className="aj-editor">
-                            <label for="js">JavaScript</label>
+                            <label for="js"><span style={{color:"#ffed70"}}>&#123; &#125;</span> JavaScript</label>
                             <textarea onKeyUp={handleKeyUp} id="js"></textarea>
                         </div>
                     </div>
                     <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-6 col-xs-12">
                         <div className="aj-editor-output">
-                            <label>Output</label>
+                            <label>Output &#x2BC8;</label>
                             <iframe srcDoc={content} id="output"></iframe>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import "./_footer.scss";
 const Footer = () => {
   return (
-    <footer className="aj-footer py-4 mt-auto">
+    <footer className="aj-footer py-3">
       <div className="d-flex justify-content-center">
          <p className="mb-2 mb-md-0">&copy; {new Date().getFullYear()} Web Media Docs. All rights reserved.</p> 
         {/* <div>

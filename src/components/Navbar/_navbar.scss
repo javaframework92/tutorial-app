@@ -162,3 +162,16 @@
         width: 30%;
     }
 }
+
+.aj-editor-group {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.aj-editor-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    border: 0.25px solid var(--text-color);
+}
