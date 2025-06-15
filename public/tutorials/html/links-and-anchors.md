@@ -1,4 +1,4 @@
-## 3. Links and Anchors
+## Links and Anchors
 
 Links allow users to navigate between pages, download files, send emails, or jump to sections on the same page. In HTML, links are created using the `<a>` (anchor) tag.
 

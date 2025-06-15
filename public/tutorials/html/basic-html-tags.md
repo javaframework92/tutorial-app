@@ -1,4 +1,4 @@
-## 2. Basic HTML Tags
+## Basic HTML Tags
 
 Now that you understand what HTML is, let’s go over its building blocks — the tags.
 
