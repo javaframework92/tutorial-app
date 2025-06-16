@@ -129,7 +129,7 @@ The link scrolls to the element with the matching `id`.
   </body>
 </html>
 ```
-
+### Output
 ![Links and Anchors Example](src/assets/images/html/links_and_anchor_1.png)
 
 ### Summary

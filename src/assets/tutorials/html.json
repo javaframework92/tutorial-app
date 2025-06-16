@@ -26,9 +26,17 @@
     "html-images": {
         "path": "/tutorials/html/html-images.md",
         "previousKey": "links-and-anchors",
-        "nextKey": "introduction",
+        "nextKey": "html-lists",
         "currentTopic": "HTML Images", 
-        "nextTopic": "",
+        "nextTopic": "HTML Lists",
         "previousTopic": "Links and Anchors"
+    },
+    "html-lists": {
+        "path": "/tutorials/html/html-lists.md",
+        "previousKey": "html-images",
+        "nextKey": "introduction",
+        "currentTopic": "HTML Lists", 
+        "nextTopic": "",
+        "previousTopic": "HTML Images"
     }
 }
