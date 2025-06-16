@@ -13,12 +13,10 @@ In the **HyperText Markup Language**, each word has it's own meaning:
 
 **Language:** HTML has a specific set of rules (syntax) that define how these tags should be used. Browsers are enough capable to understand this language and render the web page accordingly.
 
----
 
 ### Why Learn HTML?
 If you are learning web development, you must need to know about HTML. HTML is the standard language used to design web pages. Every website you visit is built on HTML.
 
----
 
 ### Structure of an HTML Document
 
@@ -38,7 +36,6 @@ If you are learning web development, you must need to know about HTML. HTML is t
 ##### Output
 ![First HTML Example](src/assets/images/html/first_html_example.png)
 
---- 
 
 ### Basic anatomy of an HTML page
 - The ```<!DOCTYPE html>``` declaration defines that this document is an HTML5 document
@@ -49,25 +46,25 @@ If you are learning web development, you must need to know about HTML. HTML is t
 - The ```<h1>``` element defines a large heading
 - The ```<p>``` element defines a paragraph
 
---- 
-
 ### How HTML Works?
-1. You write HTML code
-2. Browser reads your HTML - The browser reads your HTML from top to bottom.
-It doesn't "run" the code like JavaScript - it just interprets and renders it as structured content.
-3. Each tag defines a type of content
-## How the Browser Renders HTML:
-1. Let's say you type a URL like https://example.com:
-2. Request is sent to the server
-3. Server responds with the HTML file
-4. Browser reads the HTML
-5. Browser displays the structure:
-6. Loads text, links, and images
-7. Starts fetching CSS and JS if mentioned
+1. You write HTML to define the structure, content, and behavior of your webpage.
+2. Save the file with **.html** extention.
+3. A web browser requests the HTML file from a web server.
+4. Browser reads your HTML - The browser reads your HTML from top to bottom.
+5. Each tag defines a type of content.
+6. The browser's HTML parser interprets the HTML and builds the DOM.
+7. The browser's rendering engine uses the DOM to draw the webpage on your screen.
+## How the rowser Renders HTML:
+1. Let's say you type a URL like https://example.com
+2. Request is sent to the server.
+3. Server responds with the HTML file.
+4. Browser reads the HTML.
+5. Browser displays the structure.
+6. Loads text, links, and images.
+7. Starts fetching CSS and JS if mentioned.
 8. Browser builds the Document Object Model (DOM) - a tree-like structure of your HTML elements
-The DOM is what JavaScript can interact with
+The DOM is what JavaScript can interact with.
 
---- 
 
 ### History of HTML
 - ##### 1991 – HTML 1.0
@@ -96,7 +93,7 @@ The DOM is what JavaScript can interact with
    - Officially released as the modern standard.
 
 ### Why HTML Keeps Evolving
-   - To support new devices (phones, tablets, smart TVs)
-   - To enable rich multimedia experiences
-   - To simplify development
-   - To make websites more accessible and responsive
+   - To support new devices (phones, tablets, smart TVs).
+   - To enable rich multimedia experiences.
+   - To simplify development.
+   - To make websites more accessible and responsive.

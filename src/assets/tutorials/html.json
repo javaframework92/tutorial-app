@@ -18,9 +18,17 @@
     "links-and-anchors": {
         "path": "/tutorials/html/links-and-anchors.md",
         "previousKey": "basic-html-tags",
-        "nextKey": "introduction",
+        "nextKey": "html-images",
         "currentTopic": "Links and Anchors", 
-        "nextTopic": "",
+        "nextTopic": "HTML Images",
         "previousTopic": "Basic HTML Tags"
+    },
+    "html-images": {
+        "path": "/tutorials/html/html-images.md",
+        "previousKey": "links-and-anchors",
+        "nextKey": "introduction",
+        "currentTopic": "HTML Images", 
+        "nextTopic": "",
+        "previousTopic": "Links and Anchors"
     }
 }

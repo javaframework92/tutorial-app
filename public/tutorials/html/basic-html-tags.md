@@ -1,8 +1,8 @@
-## 2. Basic HTML Tags
+## Basic HTML Tags
 
 Now that you understand what HTML is, let’s go over its building blocks — the tags.
 
-HTML tags define how content should appear and behave in the browser. Most tags come in pairs: an opening tag and a closing tag.
+HTML tags define how content should appear and behave in the browser. Most of the tags come in pairs: an opening tag and a closing tag.
 
 Example:
 
@@ -12,11 +12,9 @@ Example:
 
 Below are the most commonly used HTML tags, grouped by purpose.
 
----
-
 ### Headings (`<h1>` to `<h6>`)
 
-Used to define headings and subheadings on a page.
+`<h1>` to `<h6>` tags are used to define headings and subheadings on a page.
 
 - `<h1>` is the most important (largest)
 - `<h6>` is the least important (smallest)
@@ -26,8 +24,6 @@ Used to define headings and subheadings on a page.
 <h2>Subsection</h2>
 ```
 
----
-
 ### Paragraphs (`<p>`)
 
 Defines a block of text as a paragraph.
@@ -36,27 +32,21 @@ Defines a block of text as a paragraph.
 <p>This is a paragraph of text.</p>
 ```
 
----
-
 ### Line Break (`<br>`)
 
 Forces a line break without starting a new paragraph.
 
 ```html
-<p>First line<br>Second line</p>
+<p>First line<br/>Second line</p>
 ```
-
----
 
 ### Horizontal Rule (`<hr>`)
 
 Creates a horizontal divider between sections.
 
 ```html
-<hr>
+<hr/>
 ```
-
----
 
 ### Text Formatting Tags
 
@@ -74,8 +64,6 @@ Used to change how text appears:
 <p><u>Underlined</u> and <mark>highlighted</mark></p>
 <p><code>console.log("Hello")</code></p>
 ```
-
----
 
 ### Lists (`<ul>`, `<ol>`, `<li>`)
 
@@ -97,8 +85,6 @@ Used to create bullet and numbered lists.
 </ol>
 ```
 
----
-
 ### Links (`<a>`)
 
 Defines a hyperlink.
@@ -106,8 +92,6 @@ Defines a hyperlink.
 ```html
 <a href="https://example.com">Visit Site</a>
 ```
-
----
 
 ### Images (`<img>`)
 
@@ -119,8 +103,6 @@ Displays an image on the page.
 ```html
 <img src="logo.png" alt="Company Logo">
 ```
-
----
 
 ### Tables (`<table>`, `<tr>`, `<th>`, `<td>`)
 
@@ -139,8 +121,6 @@ Used to display data in rows and columns.
 </table>
 ```
 
----
-
 ### Forms (`<form>`, `<input>`, `<textarea>`, `<button>`)
 
 Used to collect user input.
@@ -156,8 +136,6 @@ Used to collect user input.
   <button type="submit">Send</button>
 </form>
 ```
-
----
 
 ### Semantic Layout Tags
 
@@ -181,8 +159,6 @@ These tags help organize the page and give structure to the layout.
 </main>
 <footer>&copy; 2025</footer>
 ```
-
----
 
 ## Full Example: Basic HTML Page
 
