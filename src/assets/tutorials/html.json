@@ -18,17 +18,17 @@
     "links-and-anchors": {
         "path": "/tutorials/html/links-and-anchors.md",
         "previousKey": "basic-html-tags",
-        "nextKey": "images",
+        "nextKey": "html-images",
         "currentTopic": "Links and Anchors", 
-        "nextTopic": "Images",
+        "nextTopic": "HTML Images",
         "previousTopic": "Basic HTML Tags"
     },
-    "images": {
-        "path": "/tutorials/html/images.md",
+    "html-images": {
+        "path": "/tutorials/html/html-images.md",
         "previousKey": "links-and-anchors",
-        "nextKey": "",
-        "currentTopic": "Images", 
+        "nextKey": "introduction",
+        "currentTopic": "HTML Images", 
         "nextTopic": "",
-        "previousTopic": "Links and Anchor"
+        "previousTopic": "Links and Anchors"
     }
 }

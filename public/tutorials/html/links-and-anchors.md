@@ -2,8 +2,6 @@
 
 Links allow users to navigate between pages, download files, send emails, or jump to sections on the same page. In HTML, links are created using the `<a>` (anchor) tag.
 
----
-
 ### Basic Syntax
 
 ```html
@@ -12,8 +10,6 @@ Links allow users to navigate between pages, download files, send emails, or jum
 
 - `href` — Specifies the URL or location to navigate to.
 - Text between the tags becomes the clickable link.
-
----
 
 ### Opening Links in a New Tab
 
@@ -30,8 +26,6 @@ Use the `target="_blank"` attribute to open links in a new browser tab.
 
 > Always use both `noopener` and `noreferrer` for external links opened in a new tab.
 
----
-
 ### Email and Phone Links
 
 You can create clickable email and phone links using `mailto:` and `tel:`.
@@ -41,45 +35,55 @@ You can create clickable email and phone links using `mailto:` and `tel:`.
 <a href="tel:+911234567890">Call Us</a>
 ```
 
-- These links open the default email app or dialer on compatible devices.
-
----
+ These links open the default email app or dialer on compatible devices.
 
 ### Download Links
 
 The `download` attribute prompts a file download when the link is clicked.
 
 ```html
-<a href="resume.pdf" download>Download Resume</a>
+<a href="image.jpg" download>Download Image</a>
 ```
 
-- The browser will download the file instead of opening it.
+The browser will download the file instead of opening it.
 
----
+You can also speicify a value for `download` attribute, which will be a new filename of the downloaded file but it is purely optional.
+
+```html
+<a href="image.jpg" download="new_image">Download Image</a>
+```
 
 ### Internal Page Links (Anchors)
 
-To link to another section on the same page, use an anchor link with `href="#id"`.
+To navigate to another section on the same page instead of redirecting to a different page, use an anchor link with id (`href="#id"`) of destination section.
+
+It is very useful for single page website where you have all the section (lik Services, About Us, Contact Us etc) in the same page.
 
 ```html
-<!-- Link -->
-<a href="#contact">Go to Contact Section</a>
-
-<!-- Target -->
-<h2 id="contact">Contact Us</h2>
+<html>
+    <head>
+        <title> Internal Link </title>
+    </head>
+    <body>
+        <section style="height:80vh">
+            <!-- Link -->
+            <a href="#contact">Go to Contact Section</a>
+        </section>
+        <!-- Target/Destination section -->
+        <section style="height:100vh" id="contact">
+            <h2>Contact Us</h2>
+        </section>
+    </body>
+</html>
 ```
 
-- The link scrolls to the element with the matching `id`.
-
----
+The link scrolls to the element with the matching `id`.
 
 ### Common Mistakes to Avoid
 
 - Using `target="_blank"` without `rel="noopener noreferrer"` can introduce security risks.
 - Missing `id` on the target element causes internal links not to work.
 - Using an anchor tag without `href` results in a non-functional link.
-
----
 
 ## Example: All Link Types in One Page
 
