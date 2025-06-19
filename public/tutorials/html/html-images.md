@@ -147,7 +147,13 @@ You can align image `left`, `center` and `right` by using `align` attribute. By 
 
 ### Responsive Image
 
-You can align image `left`, `center` and `right` by using `align` attribute. By default the image is aligned at left.
+You can make the images responsive. Responsive images automatically adjust the size based on the devices screen size and this helps to improve performance across different devices.
+
+Here are a few methods to achieve this:
+
+#### 1. Using CSS:
+
+This is a common way to make images responsive through CSS.
 
 #### Example
 
@@ -155,20 +161,35 @@ You can align image `left`, `center` and `right` by using `align` attribute. By 
 <!DOCTYPE html>
 <html>
   <head>
-    <title> HTML Images </title>
+      <title> HTML Images </title>
   </head>
   <body>
-    <img 
-      src="wmd_image.png" 
-      alt="web media docs" 
-      height="200px" 
-      width="200px" 
-      border="1"
-      align="right"
-    />
+      <img src="wmd-image.jpg" alt="Description of image" style="max-width: 100%; height: auto;" />
   </body>
-</html> 
+</html>
 ```
+	
+- `max-width: 100%` ensures the image never exceeds the width of its container.
+- `height: auto` maintains the image’s aspect ratio.
+
+#### 2. Using the `<picture>` element 
+
+This helps you to display different image in different size or resolution.
+
+#### Example
+
+```html
+<picture>
+  <source srcset="large-image.jpg" media="(min-width: 800px)">
+  <source srcset="small-image.jpg" media="(max-width: 799px)">
+  <img src="default-image.jpg" alt="Responsive Image">
+</picture>
+```
+
+- The `srcset` attribute is required, and defines the path of the image.
+- The `media` attribute is optional, and accepts the media queries.
+- The `<img>` element for browsers that do not support the `<picture>` element.
+
 
 ### Tips
 
@@ -176,8 +197,6 @@ You can align image `left`, `center` and `right` by using `align` attribute. By 
 - Use descriptive filenames for images (`team-photo.jpg` instead of `img1.jpg`).
 - Optimize images for web - large image files slow down the page.
 - Use modern formats like WebP or AVIF for better performance (when supported).
-
-
 
 ### Summary
 

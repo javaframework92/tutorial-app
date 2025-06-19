@@ -5,16 +5,12 @@
     gap: 2rem;
     white-space: nowrap;
     height: 8vh;
-    // position: sticky;
-    // top:0;
 
     .logo {
-      img{
-        height: 3.7rem;
-      }
+        img {
+            height: 3.7rem;
+        }
     }
-
-
 
     .aj-nav-bar {
         display: flex;
@@ -29,7 +25,6 @@
             text-decoration: none;
             color: var(--text-color);
             border-radius: 0.5rem;
-            // font-weight: 300;
 
             &:hover {
                 color: var(--accent-color);
@@ -88,14 +83,13 @@
         align-items: center;
         gap: .75rem;
         justify-content: center;
-        animation: hm-navbar-animation 0.75s ease-out;
+        animation: hm-navbar-animation 0.25s ease-out;
 
         .aj-nav-bar-item {
             list-style: none;
             padding: 0.5rem 1rem;
             text-decoration: none;
             color: var(--text-color);
-            // font-weight: 300;
             border-radius: 0.5rem;
 
             &:hover {
@@ -129,6 +123,10 @@
     }
 
     @media screen and (max-width: 800px) {
+        .aj-editor-group {
+            right: 10%;
+        }
+
         .aj-nav-bar {
             display: none;
         }
@@ -165,7 +163,7 @@
 
 .aj-editor-group {
     position: absolute;
-    top: 1%;
+    top: 1.25%;
     right: 2%;
 }
 
@@ -174,4 +172,13 @@
     border-radius: 0.5rem;
     color: var(--text-color);
     border: 0.25px solid var(--text-color);
+    background-color: transparent;
+    font-size: small;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        border: 0.25px solid var(--text-color);
+    }
 }
