@@ -2,41 +2,113 @@
     "introduction": {
         "path": "/tutorials/html/introduction.md",
         "previousKey": "",
+        "previousTopic": "",
         "nextKey": "basic-html-tags",
-        "currentTopic": "Introduction to HTML",
         "nextTopic": "Basic HTML Tags",
-        "previousTopic": ""
+        "currentTopic": "Introduction to HTML"
     },
     "basic-html-tags": {
         "path": "/tutorials/html/basic-html-tags.md",
         "previousKey": "introduction",
+        "previousTopic": "Introduction to HTML",
         "nextKey": "links-and-anchors",
-        "currentTopic": "Basic HTML Tags", 
         "nextTopic": "Links and Anchors",
-        "previousTopic": "Introduction to HTML"
+        "currentTopic": "Basic HTML Tags" 
     },
     "links-and-anchors": {
         "path": "/tutorials/html/links-and-anchors.md",
         "previousKey": "basic-html-tags",
+        "previousTopic": "Basic HTML Tags",
         "nextKey": "html-images",
-        "currentTopic": "Links and Anchors", 
         "nextTopic": "HTML Images",
-        "previousTopic": "Basic HTML Tags"
+        "currentTopic": "Links and Anchors" 
     },
     "html-images": {
         "path": "/tutorials/html/html-images.md",
         "previousKey": "links-and-anchors",
+        "previousTopic": "Links and Anchors",
         "nextKey": "html-lists",
-        "currentTopic": "HTML Images", 
         "nextTopic": "HTML Lists",
-        "previousTopic": "Links and Anchors"
+        "currentTopic": "HTML Images"
     },
     "html-lists": {
         "path": "/tutorials/html/html-lists.md",
         "previousKey": "html-images",
-        "nextKey": "introduction",
-        "currentTopic": "HTML Lists", 
+        "previousTopic": "HTML Images",
+        "nextKey": "html-tables",
+        "nextTopic": "HTML Tables",
+        "currentTopic": "HTML Lists"
+    },
+    "html-tables": {
+        "path": "/tutorials/html/html-tables.md",
+        "previousKey": "html-lists",
+        "previousTopic": "HTML Lists",
+        "nextKey": "html-forms",
+        "nextTopic": "HTML Forms",
+        "currentTopic": "HTML Tables" 
+    },
+    "html-forms": {
+        "path": "/tutorials/html/html-forms.md",
+        "previousKey": "html-tables",
+        "previousTopic": "HTML Tables",
+        "nextKey": "semantic-html",
+        "nextTopic": "Semantic HTML",
+        "currentTopic": "HTML Forms" 
+    },
+    "semantic-html": {
+        "path": "/tutorials/html/semantic-html.md",
+        "previousKey": "html-forms",
+        "previousTopic": "HTML Forms",
+        "nextKey": "text-formatting-tags",
+        "nextTopic": "Text Formatting Tags",
+        "currentTopic": "Semantic HTML" 
+    },
+    "text-formatting-tags": {
+        "path": "/tutorials/html/text-formatting-tags.md",
+        "previousKey": "semantic-html",
+        "previousTopic": "Semantic HTML",
+        "nextKey": "html-attributes",
+        "nextTopic": "HTML Attributes",
+        "currentTopic": "Text Formatting Tags" 
+    },
+    "html-attributes": {
+        "path": "/tutorials/html/html-attributes.md",
+        "previousKey": "text-formatting-tags",
+        "previousTopic": "Text Formatting Tags",
+        "nextKey": "inline-css",
+        "nextTopic": "Inline CSS & HTML Styling",
+        "currentTopic": "HTML Attributes" 
+    },
+    "inline-css": {
+        "path": "/tutorials/html/inline-css.md",
+        "previousKey": "html-attributes",
+        "previousTopic": "HTML Attributes",
+        "nextKey": "embedding-content",
+        "nextTopic": "Embedding Content",
+        "currentTopic": "Inline CSS" 
+    },
+    "embedding-content": {
+        "path": "/tutorials/html/embedding-content.md",
+        "previousKey": "inline-css",
+        "previousTopic": "Inline CSS ",
+        "nextKey": "html5-new-features",
+        "nextTopic": "HTML5 New Features",
+        "currentTopic": "Embedding Content" 
+    },
+    "html5-new-features": {
+        "path": "/tutorials/html/html5-new-features.md",
+        "previousKey": "embedding-content",
+        "previousTopic": "Embedding Content",
+        "nextKey": "html-entities",
+        "nextTopic": "HTML Entities",
+        "currentTopic": "HTML5 New Features" 
+    },
+    "html-entities": {
+        "path": "/tutorials/html/html-entities.md",
+        "previousKey": "html5-new-features",
+        "previousTopic": "HTML5 New Features",
+        "nextKey": "",
         "nextTopic": "",
-        "previousTopic": "HTML Images"
+        "currentTopic": "HTML Entities" 
     }
 }

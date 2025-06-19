@@ -2,8 +2,6 @@
 
 Lists are used to group related items together in a readable format. HTML supports two main types of lists: **ordered** and **unordered**, both made up of **list items**.
 
----
-
 ### Ordered List (`<ol>`)
 
 An ordered list displays items in a numbered sequence.
@@ -19,8 +17,6 @@ An ordered list displays items in a numbered sequence.
 - The browser automatically numbers the items.
 - Great for step-by-step instructions.
 
----
-
 ### Unordered List (`<ul>`)
 
 An unordered list uses bullet points instead of numbers.
@@ -35,8 +31,6 @@ An unordered list uses bullet points instead of numbers.
 
 - Use this for items where the order doesn’t matter.
 
----
-
 ### List Item (`<li>`)
 
 Each item in a list is wrapped inside a `<li>` tag. You must use `<li>` inside either `<ul>` or `<ol>` — it can’t be used on its own.
@@ -44,8 +38,6 @@ Each item in a list is wrapped inside a `<li>` tag. You must use `<li>` inside e
 ```html
 <li>This is a list item</li>
 ```
-
----
 
 ### Nested Lists
 
@@ -71,7 +63,6 @@ You can place one list inside another to create a hierarchy.
 - Nesting is useful for categories with sub-items.
 - The inner list should be placed inside a `<li>` of the outer list.
 
----
 
 ### Tips and Mistakes to Avoid
 
@@ -80,9 +71,8 @@ You can place one list inside another to create a hierarchy.
 - Add proper indentation for readability, especially in nested lists.
 - Always close your list tags — forgetting to close `<li>` or `<ul>` can break the structure of your page.
 
----
 
-## Full Example: Ordered, Unordered, and Nested Lists
+### Full Example: Ordered, Unordered, and Nested Lists
 
 ```html
 <!DOCTYPE html>
@@ -129,10 +119,10 @@ You can place one list inside another to create a hierarchy.
 </body>
 </html>
 ```
-### Output
+#### Output
 ![Links and Anchors Example](src/assets/images/html/html_list_example_1.png)
 
-## Summary
+### Summary
 
 - Use `<ol>` for numbered lists and `<ul>` for bullet lists.
 - Always wrap list content inside `<li>` tags.

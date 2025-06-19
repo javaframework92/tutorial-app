@@ -60,7 +60,7 @@ HTML Indexes
     Global attributes: id, class, style, title, data-*
     Custom data attributes (data-info, etc.)
 
-11. Meta Tags and the <head> section
+11. Meta Tags and the <head> section - pending
     <title>, <meta charset>, <meta name="description">, viewport tag
 
 12. Inline CSS & HTML Styling
@@ -78,12 +78,7 @@ HTML Indexes
 15. HTML Entities
     &lt;, &gt;, &nbsp;, &copy;, etc.
 
-16. Embedding Content
-    <iframe> (e.g., YouTube videos)
-    Embedding Google Maps
-    <object>, <embed>
-
-17. Best Practices
+16. Best Practices
     Valid HTML
     Accessible content (use of alt, semantic tags)
     Proper nesting & indentation
