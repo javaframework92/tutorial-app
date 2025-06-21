@@ -77,21 +77,20 @@ const Navbar = () => {
         <header className="wmd-main-header">
             <div className="main-header">
                 <div className="logo">
-
                     <a href="/">
                         <img src="src/assets/images/wmd.svg" alt="Web Media Docs" />
                     </a>
 
                 </div>
-                {/* <div className="wmd-header-company-group">
-
-                </div> */}
+                <div className="wmd-header-company-group">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
                 <div className="wmd-hamburger-menu">
                     <RxHamburgerMenu className="wmd-hamburger" onClick={() => {
                         setShowHamberger(!showHamberger);
                     }} />
                 </div>
-
                 <div className="wmd-editor-group">
                     <button className="wmd-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
                 </div>
