@@ -8,7 +8,7 @@ Links allow users to navigate between pages, download files, send emails, or jum
 <a href="https://example.com">Visit Example</a>
 ```
 
-- `href` — Specifies the URL or location to navigate to.
+- `href` - Specifies the URL or location to navigate to.
 - Text between the tags becomes the clickable link.
 
 ### Opening Links in a New Tab
