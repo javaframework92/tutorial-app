@@ -14,12 +14,13 @@
 .main-header {
     height: 8vh;
     background-color: var(--text-color);
+}
 
-    .logo {
-        img {
-            height: 3.7rem;
-            margin: 0.25rem 0 0 0.75rem;
-        }
+.logo {
+    position: absolute;
+    img {
+        height: 3.7rem;
+        margin: 0.25rem 0 0 0.75rem;
     }
 }
 
@@ -42,6 +43,7 @@
         text-decoration: none;
         color: var(--text-color);
         //border-radius: 0.5rem;
+        height: 5vh;
 
         &:hover {
             //color: var(--accent-color);
@@ -56,6 +58,7 @@
     //color: var(--accent-color);
     //background-color: var(--accent-color);
     background: linear-gradient(165deg, #a066e8, #ffcaf2);
+    height: 5vh;
 }
 
 .wmd-scroll-arrow {
@@ -209,4 +212,28 @@
         color: var(--text-color);
         border: 0.25px solid var(--text-color);
     }
+}
+
+.wmd-header-company-group {
+    display: flex;
+    align-items: center;
+   // gap: 2rem;
+    position: absolute;
+    //top: 25%;
+    right: 30vh;
+    //background-color: #a066e8;
+    height: 8vh;
+    display: none;
+}
+
+.wmd-header-company-group a {
+    text-decoration: none;
+    color: var(--accent-color);
+     height: 8vh;
+     padding: 2.5vh 1rem;
+}
+
+.wmd-header-company-group a:hover {
+    color: var(--text-color);
+    background: linear-gradient(165deg, #a066e8, #ffcaf2);
 }
