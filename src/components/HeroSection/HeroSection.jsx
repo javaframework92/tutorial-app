@@ -45,13 +45,13 @@ const HeroSection = (
 
   return (
     <div className={`hero`} >
-      <div className={`aj-hero-content ${isVisible ? 'visible' : ''}`} ref={heroRef}>
+      <div className={`wmd-hero-content ${isVisible ? 'visible' : ''}`} ref={heroRef}>
         <h2 className="greeting"><AnimatedText text="Welcome to Web Media Docs!" delay={50} />
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="search-bar">
             <input type="text" placeholder="Search tutorials.." onChange={handleSearch} />
-            <button type='submit'><BiSearch className='aj-search-icon'></BiSearch></button>
+            <button type='submit'><BiSearch className='wmd-search-icon'></BiSearch></button>
           </div>
         </form>
       </div>

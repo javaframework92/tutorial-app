@@ -26,10 +26,10 @@
   </g>
 
   <!-- Title -->
-  <text x="65" y="100" font-size="5rem" fill="#fff"
+  <text x="65" y="100" font-size="5rem" fill="#3a005ce3"
         font-family="Georgia, serif" font-weight="500">WMD</text>
 
   <!-- Subtitle -->
-  <text x="70" y="145" font-size="2rem" fill="#fff"
+  <text x="70" y="145" font-size="2rem" fill="#3a005ce3"
         font-family="Georgia, serif" letter-spacing="4">Web Media Docs</text>
 </svg>

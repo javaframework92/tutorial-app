@@ -54,7 +54,7 @@ const Navbar = () => {
         }
     };
 
-      const openEditor = () => {
+    const openEditor = () => {
         window.open("/editor", "_blank")
     }
 
@@ -74,51 +74,57 @@ const Navbar = () => {
 
 
     return (
-        <header className="aj-main-header">
+        <header className="wmd-main-header">
+            <div className="main-header">
+                <div className="logo">
 
-            <div className="logo">
-                
-                <a href="/">
-                        <img src = "src/assets/images/wmd.svg" alt="Web Media Docs"/>
-                </a>
-    
-            </div>
-            {canScrollLeft && (
-                <div onClick={() => scrollByAmount(-50)} className="aj-scroll-arrow left">
-                    <PiLessThanLight />
-                </div>
-            )}
-            {
-                tutorials.length > 0 && (
-                    <nav className={showHamberger ? "aj-hamburger-navbar" : "aj-nav-bar"} ref={menuRef}>
-                        {
-                            tutorials.map((tutorial, index) => (
-                                <Link
-                                    key={index}
-                                    to={tutorial.path}
-                                    className={`aj-nav-bar-item ${location.pathname === tutorial.path ? 'active' : ''}`}
-                                    onClick={() => {
-                                        setShowHamberger(false);
-                                    }}
-                                >{tutorial.name}</Link>
-                            ))
-                        }
-                    </nav>
-                )
-            }
-            {canScrollRight && (
-                <div onClick={() => scrollByAmount(50)} className="aj-scroll-arrow right">
-                    <PiGreaterThanLight />
-                </div>
-            )}
-            <div className="aj-hamburger-menu">
-                <RxHamburgerMenu className="aj-hamburger" onClick={() => {
-                    setShowHamberger(!showHamberger);
-                }} />
-            </div>
+                    <a href="/">
+                        <img src="src/assets/images/wmd.svg" alt="Web Media Docs" />
+                    </a>
 
-            <div className="aj-editor-group">
-                <button className="aj-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
+                </div>
+                {/* <div className="wmd-header-company-group">
+
+                </div> */}
+                <div className="wmd-hamburger-menu">
+                    <RxHamburgerMenu className="wmd-hamburger" onClick={() => {
+                        setShowHamberger(!showHamberger);
+                    }} />
+                </div>
+
+                <div className="wmd-editor-group">
+                    <button className="wmd-editor-btn" onClick={() => openEditor()} >Try Online Editor</button>
+                </div>
+            </div>
+            <div className="main-navbar">
+                {canScrollLeft && (
+                    <div onClick={() => scrollByAmount(-50)} className="wmd-scroll-arrow left">
+                        <PiLessThanLight />
+                    </div>
+                )}
+                {
+                    tutorials.length > 0 && (
+                        <nav className={showHamberger ? "wmd-hamburger-navbar" : "wmd-nav-bar"} ref={menuRef}>
+                            {
+                                tutorials.map((tutorial, index) => (
+                                    <Link
+                                        key={index}
+                                        to={tutorial.path}
+                                        className={`wmd-nav-bar-item ${location.pathname === tutorial.path ? 'active' : ''}`}
+                                        onClick={() => {
+                                            setShowHamberger(false);
+                                        }}
+                                    >{tutorial.name}</Link>
+                                ))
+                            }
+                        </nav>
+                    )
+                }
+                {canScrollRight && (
+                    <div onClick={() => scrollByAmount(50)} className="wmd-scroll-arrow right">
+                        <PiGreaterThanLight />
+                    </div>
+                )}
             </div>
         </header>
 

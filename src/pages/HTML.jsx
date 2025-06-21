@@ -42,7 +42,7 @@ const HTML = () => {
 
 
     return (
-        <Content currentTopic={currentTopic} courseIndexes={html} currentKey = {key}>
+        <Content title="HTML Tutorials" currentTopic={currentTopic} courseIndexes={html} currentKey = {key}>
             <ReactMarkdown>{content}</ReactMarkdown>
         </Content>
     );

@@ -1,4 +1,4 @@
-.aj-content {
+.wmd-content {
     // box-shadow: 0 0 5px #cfcfcfc4;
     padding: 0.5rem 2rem;
     background-color: #e1dcdc26;
@@ -17,7 +17,7 @@
     }
 }
 
-.aj-btn-group {
+.wmd-btn-group {
     display: flex;
     // position: relative;
     // top: 1%;
@@ -26,13 +26,13 @@
     gap: .25rem;
     
 
-    .aj-topic-text {
+    .wmd-topic-text {
         color: var(--accent-color);
     }
 
-    .aj-btn-previous {
+    .wmd-btn-previous {
         margin-right: auto;
-        background-color: var(--accent-color);
+        background: linear-gradient(165deg, #a066e8, #ffcaf2); //var(--accent-color);
         color: var(--text-color);
 
          &:hover {
@@ -43,9 +43,9 @@
         }
     }
 
-    .aj-btn-next {
+    .wmd-btn-next {
         margin-left: auto;
-        background-color: var(--accent-color);
+        background: linear-gradient(165deg, #a066e8, #ffcaf2);;// var(--accent-color);
         color: var(--text-color);
 
         &:hover {
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 575px) {
 
-    .aj-content {
+    .wmd-content {
         box-shadow: 0 0 0;
     }
 

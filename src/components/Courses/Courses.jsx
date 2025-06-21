@@ -44,8 +44,8 @@ const Courses = ({ search }) => {
             } */}
             <div className="row">
                 <div className="col-12">
-                    <div className="aj-popular-text">
-                        <h2 className="aj-popular-courses">Most Popular Courses</h2>
+                    <div className="wmd-popular-text">
+                        <h2 className="wmd-popular-courses">Most Popular Courses</h2>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@ const Courses = ({ search }) => {
                             <div className="row tech-row">
                                 <div className="col-12">
                                     <div className="">
-                                        <h3 className="aj-tech-type">Web Development</h3>
+                                        <h3 className="wmd-tech-type">Web Development</h3>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ const Courses = ({ search }) => {
                             <div className="row tech-row ">
                                 <div className="col-12">
                                     <div className="">
-                                        <h3 className="aj-tech-type">Programming Languages</h3>
+                                        <h3 className="wmd-tech-type">Programming Languages</h3>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ const Courses = ({ search }) => {
                             <div className="row tech-row ">
                                 <div className="col-12">
                                     <div className="">
-                                        <h3 className="aj-tech-type">Databases</h3>
+                                        <h3 className="wmd-tech-type">Databases</h3>
                                     </div>
                                 </div>
                             </div>

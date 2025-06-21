@@ -1,4 +1,4 @@
-.aj-editor-container {
+.wmd-editor-container {
     //width: 100%;
     //height: 90vh;
     //border: 1px solid #474747;
@@ -7,7 +7,7 @@
 }
 
 
-.aj-editor, .aj-editor-output {
+.wmd-editor, .wmd-editor-output {
     display: flex;
     flex-direction: column;
     //margin: 1rem;
@@ -15,7 +15,7 @@
    // background-color: antiquewhite;
 }
 
-.aj-editor label, .aj-editor-output label {
+.wmd-editor label, .wmd-editor-output label {
 
     background-color: #000;
     color: var(--text-color);
@@ -23,7 +23,7 @@
 
 }
 
-.aj-editor textarea {
+.wmd-editor textarea {
 
     background-color: #474747;
     color: var(--text-color);
@@ -33,7 +33,7 @@
     padding: 0.25rem 0.5rem;
 
 }
-.aj-editor-output iframe {
+.wmd-editor-output iframe {
     //background-color: antiquewhite;
      height: 80vh;
      border: 0.5px solid #474747;

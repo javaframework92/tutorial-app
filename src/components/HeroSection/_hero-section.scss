@@ -7,17 +7,17 @@
   padding: 20px;
 }
 
-.aj-search-icon{
+.wmd-search-icon{
   fill: var(--accent-color);
 }
 
-.aj-hero-content {
+.wmd-hero-content {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
-.aj-hero-content.visible {
+.wmd-hero-content.visible {
   opacity: 1;
   transform: translateY(0);
   display: flex;
@@ -46,9 +46,9 @@
   width: 50vh;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
   .search-bar {
-    width: 35vh;
+    width: 40vh;
   }
   .greeting {
     font-size: 2.5rem;
