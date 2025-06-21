@@ -12,6 +12,7 @@
     .logo {
         img {
             height: 3.7rem;
+            margin: 0.25rem 0 0 0.75rem;
         }
     }
 
@@ -158,6 +159,17 @@
     }
 
     @media screen and (max-width: 500px) {
+
+        .aj-editor-group {
+            right: 15%;
+        }
+
+        .aj-editor-btn {
+            padding: 0.5rem 0.5rem;
+            font-size: x-small;
+
+        }
+
         .aj-scroll-arrow {
             display: none;
         }
