@@ -1,5 +1,5 @@
 ## HTML Introduction
-HTML stands for Hyper Text Markup Language. This is not a programming language, it's a markup language which is used to design web pages. In the context of HTML markup refers to the **tags** or **elements**.
+HTML stands for Hyper Text Markup Language. This is not a programming language, it's a markup language which is used to design web pages. In the context of HTML markup refers to the [tags](html?topic=basic-html-tags) or [elements](html?topic=basic-html-tags).
 
 In the **HyperText Markup Language**, each word has it's own meaning:  
 **Hyper Text:**

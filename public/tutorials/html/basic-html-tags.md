@@ -1,6 +1,6 @@
 ## Basic HTML Tags
 
-Now that you understand what HTML is, let’s go over its building blocks — the tags.
+Now that you understand what [HTML](html?topic=introduction) is, let’s go over its building blocks — the tags.
 
 HTML tags define how content should appear and behave in the browser. Most of the tags come in pairs: an opening tag and a closing tag.
 

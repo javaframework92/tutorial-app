@@ -1,10 +1,10 @@
 ## HTML Images
 
-To put image on web page, we use the `<img>` element. Unlike most of the tags, `<img>` tag cannot have closing/ending tag and cannot have any child content that is called **void element**.
+To put image on web page, we use the `<img>` element. Unlike most of the tags, `<img>` tag cannot have closing/ending tag and cannot have any child content that is called [void element](https://developer.mozilla.org/en-US/docs/Glossary/Void_element).
 
 It requires two attributes:  
 - `src`: contains the path/URL of the image.  
-- `alt`: alternate text for the image, useful when the image cannot be displayed. Also helps with accessibility and SEO.
+- `alt`: alternate text for the image, useful when the image cannot be displayed. Also helps with accessibility and [SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
 
 Other attributes  
 - `height`: Specify height of the image.
