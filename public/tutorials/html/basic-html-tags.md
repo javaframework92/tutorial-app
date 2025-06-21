@@ -242,8 +242,10 @@ Here is a complete HTML example using many of the tags from above. This can be p
 </body>
 </html>
 ```
+
+##### Output
 ![Basic HTML Tags Example](src/assets/images/html/basic_html_tag_1.png)
----
+
 
 ## Summary
 

@@ -85,7 +85,7 @@ The link scrolls to the element with the matching `id`.
 - Missing `id` on the target element causes internal links not to work.
 - Using an anchor tag without `href` results in a non-functional link.
 
-## Example: All Link Types in One Page
+### Example: All Link Types in One Page
 
 ```html
 <!DOCTYPE html>
@@ -129,7 +129,7 @@ The link scrolls to the element with the matching `id`.
   </body>
 </html>
 ```
-### Output
+#### Output
 ![Links and Anchors Example](src/assets/images/html/links_and_anchor_1.png)
 
 ### Summary
