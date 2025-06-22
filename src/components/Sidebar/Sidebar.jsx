@@ -4,7 +4,7 @@ import "./_sidebar.scss";
 const Sidebar = ({ title, currentKey, courseIndexes }) => {
     const location = useLocation();
     return (
-        <div className="wmd-sidebar vh-100 p-3">
+        <div className="wmd-sidebar vh-100">
             <h4 className="wmd-sidebar-title">{title}</h4>
             <ul className="nav nav-pills flex-column">
                 {

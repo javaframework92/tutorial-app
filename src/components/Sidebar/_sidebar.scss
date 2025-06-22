@@ -29,8 +29,9 @@
     width: 15rem;
     background-color: #d4c0fc29;
     position: sticky;
-    top:13vh;
+    top: 13vh;
     //overflow-y: auto;
+    padding: 1rem;
 }
 
 .wmd-active {
@@ -48,6 +49,11 @@
 @media screen and (max-width: 1300px) {
     .wmd-sidebar {
         width: 11rem;
+        padding: 0;
+    }
+
+    .content-container ul {
+        text-align: left;
     }
 }
 
