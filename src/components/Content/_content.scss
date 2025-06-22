@@ -31,12 +31,13 @@
     }
 
     .wmd-btn-previous {
+        border: none;
         margin-right: auto;
         background: linear-gradient(165deg, #a066e8, #ffcaf2); //var(--accent-color);
         color: var(--text-color);
 
          &:hover {
-            border: 1px solid var(--accent-color);
+            //border: 1px solid var(--accent-color);
             color: var(--accent-color);
             background-color: var(--text-color);
 
@@ -44,12 +45,13 @@
     }
 
     .wmd-btn-next {
+        border: none;
         margin-left: auto;
         background: linear-gradient(165deg, #a066e8, #ffcaf2);;// var(--accent-color);
         color: var(--text-color);
 
         &:hover {
-            border: 1px solid var(--accent-color);
+            //border: 1px solid var(--accent-color);
             color: var(--accent-color);
             background-color: var(--text-color);
 

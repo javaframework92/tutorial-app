@@ -6,6 +6,7 @@ import { PiLessThanLight } from "react-icons/pi";
 import { Link, useLocation } from "react-router-dom";
 import tutorials from "../../assets/tutorials/tutorials.json";
 import "./_navbar.scss";
+import Modal from "../Modal/Modal";
 
 
 const Navbar = () => {
@@ -15,6 +16,8 @@ const Navbar = () => {
     const menuRef = useRef(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(false);
+    const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
     useEffect(() => {
         const checkScrollability = () => {
@@ -59,6 +62,13 @@ const Navbar = () => {
     }
 
 
+    const openAboutModal = () => setIsAboutModalOpen(true);
+    const openConctModal = () => setIsContactModalOpen(true);
+
+    const closeAboutModal = () => setIsAboutModalOpen(false);
+    const closeContactModal = () => setIsContactModalOpen(false);
+
+
     useEffect(() => {
 
         const handleOutsideClick = () => {
@@ -83,8 +93,8 @@ const Navbar = () => {
 
                 </div>
                 <div className="wmd-header-company-group">
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
+                    <button onClick={openAboutModal} >About Us</button>
+                    <button onClick={openConctModal} >Contact Us</button>
                 </div>
                 <div className="wmd-hamburger-menu">
                     <RxHamburgerMenu className="wmd-hamburger" onClick={() => {
@@ -125,6 +135,21 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
+
+            <Modal
+                title="About Us"
+                isOpen={isAboutModalOpen}
+                onClose={closeAboutModal}>
+                <p>This is the content of the <strong>modal.</strong></p>
+            </Modal>
+
+            <Modal
+                title="Contact Us"
+                isOpen={isContactModalOpen}
+                onClose={closeContactModal}>
+                <p>This is the content of the <strong>modal.</strong></p>
+            </Modal>
+            
         </header>
 
     );

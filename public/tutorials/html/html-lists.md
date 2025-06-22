@@ -1,8 +1,8 @@
-# HTML Lists
+## HTML Lists
 
 Lists are fundamental building blocks of web content. They organize information in a clear, scannable format that both users and search engines love. Whether you're creating navigation menus, feature highlights, or step-by-step instructions, HTML lists are your go-to solution.
 
-## What Are HTML Lists?
+### Type of HTML List?
 
 HTML provides three types of lists to structure related information:
 
@@ -10,7 +10,7 @@ HTML provides three types of lists to structure related information:
 - **Ordered Lists** (`<ol>`) - Items in sequential order  
 - **Description Lists** (`<dl>`) - Term and definition pairs
 
-## Unordered Lists (`<ul>`)
+### Unordered Lists (`<ul>`)
 
 Use unordered lists when the order doesn't matter. Items display with bullet points by default.
 
@@ -24,7 +24,7 @@ Use unordered lists when the order doesn't matter. Items display with bullet poi
 </ul>
 ```
 
-### Output
+#### Output
 
 ![First Lists Example](src/assets/images/html/lists_example_1.png)
 
@@ -63,7 +63,7 @@ Create hierarchical structures by nesting lists:
 </ul>
 ```
 
-## Ordered Lists (`<ol>`)
+### Ordered Lists (`<ol>`)
 
 Ordered lists automatically number items when sequence matters.
 
@@ -78,13 +78,13 @@ Ordered lists automatically number items when sequence matters.
 </ol>
 ```
 
-### Output
+#### Output
 
 ![Second Lists Example](src/assets/images/html/lists_example_2.png)
 
-### Advanced Attributes
+## Advanced Attributes
 
-#### Start from Different Number
+### Start from Different Number
 
 ```html
 <ol start="5">
@@ -94,7 +94,7 @@ Ordered lists automatically number items when sequence matters.
 </ol>
 ```
 
-#### Different Number Types
+### Different Number Types
 
 ```html
 <!-- Roman numerals -->
@@ -112,7 +112,7 @@ Ordered lists automatically number items when sequence matters.
 </ol>
 ```
 
-#### Reverse Order
+### Reverse Order
 
 ```html
 <ol reversed>
@@ -159,7 +159,7 @@ Perfect for glossaries, FAQs, or any term-definition relationships.
   <dd>Programming language - adds interactivity</dd>
 </dl>
 ```
-### Output
+#### Output
 
 ![Second Lists Example](src/assets/images/html/lists_example_3.png)
 
@@ -290,15 +290,15 @@ Item 3<br>
 ```
 
 
-## Best Practices
+### Best Practices
 
-### Choose the Right List Type
+#### Choose the Right List Type
 
 - Use `<ul>` for features, benefits, or unordered items
 - Use `<ol>` for instructions, rankings, or sequential steps
 - Use `<dl>` for definitions, specifications, or Q&A sections
 
-### Accessibility Considerations
+#### Accessibility Considerations
 
 ```html
 <!-- Good: Descriptive navigation -->
@@ -318,14 +318,14 @@ Item 3<br>
 </ul>
 ```
 
-### Key Attributes
+#### Key Attributes
 
 - `start="5"` - Start ordered list from number 5
 - `type="A"` - Use uppercase letters (A, B, C...)
 - `type="I"` - Use uppercase Roman numerals (I, II, III...)
 - `reversed` - Count down instead of up
 
-## Summary
+### Summary
 
 HTML lists are essential for organizing content effectively:
 
